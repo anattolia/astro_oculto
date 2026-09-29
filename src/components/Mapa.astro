@@ -104,7 +104,7 @@ export interface Props {
       });
 
       const popup = new mapboxgl.Popup().setHTML(
-        `<strong>${marker.properties.elegido ? `<a href= ./${marker.properties.nombre.toLowerCase()}>${marker.properties.nombre}</a>` :`<p>${marker.properties.nombre}</p>`} </strong><p>${marker.properties.añoInicio} - ${marker.properties.añoFin}<br>${marker.properties.direccion}<br></p>`,
+        `<strong>${marker.properties.elegido ? `<a href= ../${marker.properties.nombre.toLowerCase()}>${marker.properties.nombre}</a>` :`<p>${marker.properties.nombre}</p>`} </strong><p>${marker.properties.añoInicio} - ${marker.properties.añoFin}<br>${marker.properties.direccion}<br></p>`,
       );
 
       new mapboxgl.Marker(el)
