@@ -16,10 +16,11 @@ export interface Props {
   import mapboxgl from "mapbox-gl";
   import "mapbox-gl/dist/mapbox-gl.css";
 
-  import ic_1 from "../assets/iconos/1.png";
+  import ic_baila from "../assets/iconos/1.png";
   import ic_graba from "../assets/iconos/cassette.png";
+  import ic_punk from "../assets/iconos/punk.png";
 
-  const iconos = [ic_1.src, ic_graba.src];
+  const iconos = [ic_baila.src, ic_graba.src, ic_punk.src];
 
   mapboxgl.accessToken =
     "pk.eyJ1IjoiYW5hdHRvbGFpIiwiYSI6InR5R3U4MmsifQ.rM6ZPt6QHPuMGAAOHFM4RQ";
@@ -61,8 +62,14 @@ export interface Props {
         //  window.alert(marker.properties.nombre);
       });
 
+      let enlaceLugar = marker.properties.nombre
+        .toLowerCase()
+        .replace(/ /g, "_")
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "");
+
       const popup = new mapboxgl.Popup().setHTML(
-        `<strong>${marker.properties.elegido ? `<a href= ../${marker.properties.nombre.toLowerCase()}>${marker.properties.nombre}</a>` : `<p>${marker.properties.nombre}</p>`} </strong><p>${marker.properties.añoInicio} - ${marker.properties.añoFin}<br>${marker.properties.direccion}<br></p>`,
+        `<strong>${marker.properties.elegido ? `<a href= ../${enlaceLugar}>${marker.properties.nombre}</a>` : `<p>${marker.properties.nombre}</p>`} </strong><p>${marker.properties.añoInicio} - ${marker.properties.añoFin}<br>${marker.properties.direccion}<br>${marker.properties.genero}</p>`,
       );
 
       new mapboxgl.Marker(el)
@@ -83,10 +90,21 @@ export interface Props {
     left: 1%;
   }
 
+  :global(a, a:visited, a:active) {
+    color: rgba(255, 72, 0, 0.9);
+    text-decoration: none;
+  }
+
   :global(.marker) {
     display: block;
     border: none;
     cursor: pointer;
     padding: 0;
+  }
+
+  :global(.mapboxgl-popup) {
+    max-width: 400px;
+    font: 12px/20px "Monospace";
+    background-color: rgba(255, 72, 0, 0.9);
   }
 </style>
