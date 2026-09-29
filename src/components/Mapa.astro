@@ -13,13 +13,61 @@ export interface Props {
 <div class="mapbox-map" id="map"></div>
 
 <script>
-  import mapboxgl from "mapbox-gl"; // or "const mapboxgl = require('mapbox-gl');"
+  import mapboxgl from "mapbox-gl";
+  import "mapbox-gl/dist/mapbox-gl.css";
+
+  import ic_01 from "../assets/iconos/1.png";
+  import ic_graba from "../assets/iconos/cassette.png";
+
+  const imgs = {
+    1: ic_01,
+    2: ic_graba,
+  };
 
   mapboxgl.accessToken =
     "pk.eyJ1IjoiYW5hdHRvbGFpIiwiYSI6InR5R3U4MmsifQ.rM6ZPt6QHPuMGAAOHFM4RQ";
 
   const long = -74.1021;
   const lat = 4.64;
+
+  // Lista de lugares
+  const lugares = {
+    type: "FeatureCollection",
+    features: [
+      {
+        type: "Feature",
+        properties: {
+          nombre: "Barbarie",
+          añoInicio: 1989,
+          añoFin: 1990,
+          direccion: "cll 10 # 3-87",
+          iconoSrc: ic_graba.src,
+          imageSrc: ic_graba.src,
+          iconSize: [50, 40],
+        },
+        geometry: {
+          type: "Point",
+          coordinates: [-74.07317335, 4.595622512],
+        },
+      },
+      {
+        type: "Feature",
+        properties: {
+          nombre: "Barbie",
+          añoInicio: 1991,
+          añoFin: 1992,
+          direccion: "cr 7 # 145-57",
+          iconoSrc: ic_graba.src,
+          imageSrc: ic_graba.src,
+          iconSize: [50, 40],
+        },
+        geometry: {
+          type: "Point",
+          coordinates: [-74.0269, 4.7209],
+        },
+      },
+    ],
+  };
 
   const map = new mapboxgl.Map({
     container: "map",
@@ -29,25 +77,56 @@ export interface Props {
     dragPan: true,
   });
 
-  const popup = new mapboxgl.Popup().setHTML(
-    "<p><strong>99 King Street</strong><br />Newport<br>RI 02840<br>United States of America</p>",
-  );
+  // Esperar a que Mapbox cargue por completo antes de agregar marcadores
+  map.on("load", () => {
+    for (const marker of lugares.features) {
+      const el = document.createElement("div");
+      const width = marker.properties.iconSize[0];
+      const height = marker.properties.iconSize[1];
 
-  const customMarker = document.createElement("div");
-  customMarker.classList.add("marker");
+      el.classList.add("marker");
 
-  new mapboxgl.Marker(customMarker)
-    .setLngLat([long, lat])
-    .setPopup(popup)
-    .addTo(map);
+      el.style.width = `${width}px`;
+      el.style.height = `${height}px`;
+      //el.style.backgroundColor = "red";
+      el.style.backgroundImage = `url('${marker.properties.iconoSrc}')`;
+      el.style.backgroundSize = "contain"; // Asegura que cubra todo el div circular
+      el.style.backgroundRepeat = "no-repeat";
+      el.style.backgroundPosition = "center";
+
+      el.tabIndex = 0;
+      // el.ariaLabel = `Marker with image of the ${marker.properties.nombre}`;
+
+      el.addEventListener("click", () => {
+        //  window.alert(marker.properties.nombre);
+      });
+
+      const popup = new mapboxgl.Popup().setHTML(
+        `<p><strong><a href="./${marker.properties.nombre.toLowerCase()}" class="button">${marker.properties.nombre}</a></strong><br />${marker.properties.añoInicio} - ${marker.properties.añoFin}<br>${marker.properties.direccion}<br></p>`,
+      );
+
+      new mapboxgl.Marker(el)
+        .setLngLat(marker.geometry.coordinates)
+        .setPopup(popup)
+        .addTo(map);
+    }
+  });
 </script>
-
 
 <style>
   #map {
-    width: 98vw;
-    height: 98vh;
+    width: 98%;
+    height: 98%;
     display: block;
-    margin: 1vh auto;
+    position: absolute;
+    top: 1%;
+    left: 1%;
   }
-  </style>
+
+  :global(.marker) {
+    display: block;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+</style>
