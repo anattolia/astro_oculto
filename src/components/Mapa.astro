@@ -16,13 +16,10 @@ export interface Props {
   import mapboxgl from "mapbox-gl";
   import "mapbox-gl/dist/mapbox-gl.css";
 
-  import ic_01 from "../assets/iconos/1.png";
+  import ic_1 from "../assets/iconos/1.png";
   import ic_graba from "../assets/iconos/cassette.png";
 
-  const imgs = {
-    1: ic_01,
-    2: ic_graba,
-  };
+  const iconos = [ic_1.src, ic_graba.src];
 
   mapboxgl.accessToken =
     "pk.eyJ1IjoiYW5hdHRvbGFpIiwiYSI6InR5R3U4MmsifQ.rM6ZPt6QHPuMGAAOHFM4RQ";
@@ -30,46 +27,8 @@ export interface Props {
   const long = -74.1021;
   const lat = 4.64;
 
-  // Lista de lugares
-  const lugares = {
-    type: "FeatureCollection",
-    features: [
-      {
-        type: "Feature",
-        properties: {
-          nombre: "Barbarie",
-          añoInicio: 1989,
-          añoFin: 1990,
-          direccion: "cll 10 # 3-87",
-          elegido: true,
-          iconoSrc: ic_graba.src,
-          imageSrc: ic_graba.src,
-          iconSize: [50, 40],
-        },
-        geometry: {
-          type: "Point",
-          coordinates: [-74.07317335, 4.595622512],
-        },
-      },
-      {
-        type: "Feature",
-        properties: {
-          nombre: "Barbie",
-          añoInicio: 1991,
-          añoFin: 1992,
-          direccion: "cr 7 # 145-57",
-          elegido: false,
-          iconoSrc: ic_graba.src,
-          imageSrc: ic_graba.src,
-          iconSize: [50, 40],
-        },
-        geometry: {
-          type: "Point",
-          coordinates: [-74.0269, 4.7209],
-        },
-      },
-    ],
-  };
+  // Importar lista de lugares
+  import { lugares } from "../data/lugares.js";
 
   const map = new mapboxgl.Map({
     container: "map",
@@ -90,8 +49,7 @@ export interface Props {
 
       el.style.width = `${width}px`;
       el.style.height = `${height}px`;
-      //el.style.backgroundColor = "red";
-      el.style.backgroundImage = `url('${marker.properties.iconoSrc}')`;
+      el.style.backgroundImage = `url('${iconos[marker.properties.icono]}')`;
       el.style.backgroundSize = "contain"; // Asegura que cubra todo el div circular
       el.style.backgroundRepeat = "no-repeat";
       el.style.backgroundPosition = "center";
@@ -104,7 +62,7 @@ export interface Props {
       });
 
       const popup = new mapboxgl.Popup().setHTML(
-        `<strong>${marker.properties.elegido ? `<a href= ../${marker.properties.nombre.toLowerCase()}>${marker.properties.nombre}</a>` :`<p>${marker.properties.nombre}</p>`} </strong><p>${marker.properties.añoInicio} - ${marker.properties.añoFin}<br>${marker.properties.direccion}<br></p>`,
+        `<strong>${marker.properties.elegido ? `<a href= ../${marker.properties.nombre.toLowerCase()}>${marker.properties.nombre}</a>` : `<p>${marker.properties.nombre}</p>`} </strong><p>${marker.properties.añoInicio} - ${marker.properties.añoFin}<br>${marker.properties.direccion}<br></p>`,
       );
 
       new mapboxgl.Marker(el)
