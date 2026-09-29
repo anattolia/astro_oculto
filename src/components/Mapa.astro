@@ -41,6 +41,7 @@ export interface Props {
           añoInicio: 1989,
           añoFin: 1990,
           direccion: "cll 10 # 3-87",
+          elegido: true,
           iconoSrc: ic_graba.src,
           imageSrc: ic_graba.src,
           iconSize: [50, 40],
@@ -57,6 +58,7 @@ export interface Props {
           añoInicio: 1991,
           añoFin: 1992,
           direccion: "cr 7 # 145-57",
+          elegido: false,
           iconoSrc: ic_graba.src,
           imageSrc: ic_graba.src,
           iconSize: [50, 40],
@@ -102,7 +104,7 @@ export interface Props {
       });
 
       const popup = new mapboxgl.Popup().setHTML(
-        `<p><strong><a href="./${marker.properties.nombre.toLowerCase()}" class="button">${marker.properties.nombre}</a></strong><br />${marker.properties.añoInicio} - ${marker.properties.añoFin}<br>${marker.properties.direccion}<br></p>`,
+        `<strong>${marker.properties.elegido ? `<a href= ./${marker.properties.nombre.toLowerCase()}>${marker.properties.nombre}</a>` :`<p>${marker.properties.nombre}</p>`} </strong><p>${marker.properties.añoInicio} - ${marker.properties.añoFin}<br>${marker.properties.direccion}<br></p>`,
       );
 
       new mapboxgl.Marker(el)
