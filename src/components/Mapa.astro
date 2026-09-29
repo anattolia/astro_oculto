@@ -1,0 +1,53 @@
+---
+export interface Props {
+  // container: string
+  // accesstoken: string
+  /** If `false`, the map will not respond to interaction.  This is a static map built with the full web map rendering API. */
+  //interactive?: boolean
+  // containerstyle?: string
+}
+
+// const { zoom, mapstyle, container, accesstoken, interactive, containerstyle = "height: 61.8vh"} = Astro.props
+---
+
+<div class="mapbox-map" id="map"></div>
+
+<script>
+  import mapboxgl from "mapbox-gl"; // or "const mapboxgl = require('mapbox-gl');"
+
+  mapboxgl.accessToken =
+    "pk.eyJ1IjoiYW5hdHRvbGFpIiwiYSI6InR5R3U4MmsifQ.rM6ZPt6QHPuMGAAOHFM4RQ";
+
+  const long = -74.1021;
+  const lat = 4.64;
+
+  const map = new mapboxgl.Map({
+    container: "map",
+    style: "mapbox://styles/anattolai/ck0gp1c513qdx1co0u9v4f3lk",
+    center: [long, lat],
+    zoom: 11.0,
+    dragPan: true,
+  });
+
+  const popup = new mapboxgl.Popup().setHTML(
+    "<p><strong>99 King Street</strong><br />Newport<br>RI 02840<br>United States of America</p>",
+  );
+
+  const customMarker = document.createElement("div");
+  customMarker.classList.add("marker");
+
+  new mapboxgl.Marker(customMarker)
+    .setLngLat([long, lat])
+    .setPopup(popup)
+    .addTo(map);
+</script>
+
+
+<style>
+  #map {
+    width: 98vw;
+    height: 98vh;
+    display: block;
+    margin: 1vh auto;
+  }
+  </style>
