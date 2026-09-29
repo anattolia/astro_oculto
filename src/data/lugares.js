@@ -13,7 +13,7 @@ export const lugares = {
         elegido: true,
         icono: 1,
         //imageSrc: `${ic_graba.src}`,
-        iconSize: [45, 35],
+        iconSize: [40, 40],
       },
       geometry: {
         type: "Point",
@@ -32,7 +32,7 @@ export const lugares = {
         elegido: false,
         icono: 1,
         // imageSrc: `${ic_graba.src}`,
-        iconSize: [45, 35],
+        iconSize: [40, 40],
       },
       geometry: {
         type: "Point",
@@ -51,7 +51,7 @@ export const lugares = {
         elegido: true,
         icono: 0,
         // imageSrc: `${ic_graba.src}`,
-        iconSize: [50, 40],
+        iconSize: [40, 40],
       },
       geometry: {
         type: "Point",
@@ -89,7 +89,7 @@ export const lugares = {
         elegido: true,
         icono: 0,
         // imageSrc: `${ic_graba.src}`,
-        iconSize: [50, 40],
+        iconSize: [40, 40],
       },
       geometry: {
         type: "Point",
@@ -108,7 +108,7 @@ export const lugares = {
         elegido: false,
         icono: 1,
         // imageSrc: `${ic_graba.src}`,
-        iconSize: [50, 40],
+        iconSize: [40, 40],
       },
       geometry: {
         type: "Point",
