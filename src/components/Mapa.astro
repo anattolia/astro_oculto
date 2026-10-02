@@ -17,11 +17,13 @@ export interface Props {
   import mapboxgl from "mapbox-gl";
   import "mapbox-gl/dist/mapbox-gl.css";
 
-  import ic_baila from "../assets/iconos/1.png";
-  import ic_graba from "../assets/iconos/cassette.png";
-  import ic_punk from "../assets/iconos/punk.png";
+  import ic_baila from "../assets/iconos/1.png"; // 0
+  import ic_graba from "../assets/iconos/cassette.png"; // 1
+  import ic_punk from "../assets/iconos/punk.png"; // 2
+  import ic_rock from "../assets/iconos/rockPunk.png"; // 3
+  import ic_gay from "../assets/iconos/gay.png"; // 4
 
-  const iconos = [ic_baila.src, ic_graba.src, ic_punk.src];
+  const iconos = [ic_baila.src, ic_rock.src, ic_graba.src, ic_punk.src, ic_gay.src];
 
   mapboxgl.accessToken =
     "pk.eyJ1IjoiYW5hdHRvbGFpIiwiYSI6InR5R3U4MmsifQ.rM6ZPt6QHPuMGAAOHFM4RQ";
@@ -70,7 +72,7 @@ export interface Props {
         .replace(/[\u0300-\u036f]/g, "");
 
       const popup = new mapboxgl.Popup().setHTML(
-        `<strong>${marker.properties.elegido ? `<a href= ../${enlaceLugar}>${marker.properties.nombre}</a>` : `<p>${marker.properties.nombre}</p>`} </strong><p>${marker.properties.añoInicio} - ${marker.properties.añoFin}<br>${marker.properties.direccion}<br>${marker.properties.genero}</p>`,
+        `<strong>${marker.properties.elegido ? `<a href= ../${enlaceLugar}>${marker.properties.nombre}</a>` : `<p>${marker.properties.nombre}</p>`} </strong><p>${marker.properties.añoInicio} - ${marker.properties.añoFin}<br>${marker.properties.direccion}<br>${marker.properties.genero}</p><br>${marker.properties.descripcion}</p>`,
       );
 
       new mapboxgl.Marker(el)
@@ -114,16 +116,19 @@ export interface Props {
 
   :global(.marker) {
     display: block;
-    border: none;
+    border: 1px black solid;
     cursor: pointer;
     padding: 0;
-    background-color: rgba(240, 240, 240, 0.7);
+    background-color: #eff4d2d1;
     border-radius: 50%;
   }
 
   :global(.mapboxgl-popup) {
     max-width: 400px;
-    font: 12px/20px "Monospace";
-    background-color: rgba(255, 72, 0, 0.9);
+    font-family:
+      Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans", Arial,
+      sans-serif;
+    background-color: #eff4d2b3;
+    padding: 1em 1.5em;
   }
 </style>
