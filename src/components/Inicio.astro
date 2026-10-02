@@ -1,28 +1,28 @@
 ---
 import te_veo_grave from "../assets/te_veo_grave.jpeg";
+import portada from "../assets/img/portada.png";
 import background from "../assets/background.svg";
 ---
 
 <div id="container">
-  <img id="background" src={background.src} alt="" fetchpriority="high" />
-  <main>
-    <section id="hero">
-      <a href="https://astro.build"
-        ><img
-          src={te_veo_grave.src}
-          width="300"
-          height="400"
-          alt="Oculto Homepage"
-        /></a
-      >
-      <h1>HOLA, OCULTO</h1>
-      <p>💃</p>
-      <a href="./ciudad" class="button">Mapa</a>
+  <!--  <img id="background" src={portada.src} alt="" fetchpriority="high" />-->
+  <main id="hero">
+    <section>
+      <h1>OCULTO URBANO</h1>
     </section>
+    <nav id="menu">
+      <a href="./ciudad" class="button">Mapa</a>
+      <a href="./" class="button">Tiempo</a>
+      <a href="./" class="button">Oculto</a>
+    </nav>
   </main>
 </div>
 
+<script></script>
+
 <style>
+  @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Play:wght@400;700&display=swap");
   #background {
     position: fixed;
     top: 0;
@@ -30,7 +30,7 @@ import background from "../assets/background.svg";
     width: 100%;
     height: 100%;
     z-index: -1;
-    filter: blur(100px);
+    filter: blur(1px);
   }
 
   #container {
@@ -44,31 +44,29 @@ import background from "../assets/background.svg";
     height: 100%;
     display: flex;
     justify-content: center;
+    background-image: url("../assets/img/portada.png");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
   }
 
   #hero {
     display: flex;
-    align-items: start;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
-    padding: 16px;
   }
 
   h1 {
-    font-size: 22px;
-    margin-top: 0.25em;
-  }
-
-  pre {
-    font-family:
-      ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
-      "DejaVu Sans Mono", monospace;
-    font-weight: normal;
-    background: linear-gradient(14deg, #d83333 0%, #f041ff 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin: 0;
+    font-size: 5em;
+    margin-top: 20vh;
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    /* font-family: "Changa One", sans-serif;
+  font-weight: 400;*/
+    font-style: normal;
+    background: #f1fbc3bf;
+    color: #191818e0;
   }
 
   h2 {
@@ -103,18 +101,29 @@ import background from "../assets/background.svg";
     border: 1px solid white;
   }
 
-  #news {
-    position: absolute;
-    bottom: 16px;
-    right: 16px;
-    max-width: 300px;
-    text-decoration: none;
-    transition: background 0.2s;
-    backdrop-filter: blur(50px);
-  }
+  #menu {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 16px;
+    width: 50vw;
+    justify-content: space-evenly;
 
-  #news:hover {
-    background: rgba(255, 255, 255, 0.55);
+    a,
+    a:visited,
+    a:active {
+      color: #474747d0;
+      text-decoration: none;
+      background: #eef4ce;
+      padding: 2px 7px;
+      border-radius: 5px;
+      font-family: system-ui;
+    }
+
+    a:hover {
+      color: #c8c0b6;
+      background: rgba(255, 255, 255);
+    }
   }
 
   @media screen and (max-height: 368px) {
@@ -134,16 +143,13 @@ import background from "../assets/background.svg";
       padding-top: 10%;
     }
 
-    #links {
-      flex-wrap: wrap;
-    }
-
-    #links a.button {
-      padding: 14px 18px;
+    #menu {
+      width: 100vw;
     }
 
     h1 {
-      line-height: 1.5;
+      margin-top: 35vh;
+      padding: inherit;
     }
   }
 </style>

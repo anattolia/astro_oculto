@@ -12,6 +12,7 @@ export const lugares = {
         genero: "rock",
         elegido: true,
         icono: 1,
+        descripcion: "Epicentro del rock under, creado por Héctor Buitrago y Andrea Echeverri antes de formar Aterciopelados. Fue un semillero de la movida alternativa de la época.",
         //imageSrc: `${ic_graba.src}`,
         iconSize: [40, 40],
       },

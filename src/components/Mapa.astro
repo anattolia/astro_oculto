@@ -10,6 +10,7 @@ export interface Props {
 // const { zoom, mapstyle, container, accesstoken, interactive, containerstyle = "height: 61.8vh"} = Astro.props
 ---
 
+<a id="inicio" href="./">Inicio</a>
 <div class="mapbox-map" id="map"></div>
 
 <script>
@@ -81,6 +82,22 @@ export interface Props {
 </script>
 
 <style>
+  #inicio {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    z-index: 9999;
+    color: #474747d0;
+    text-decoration: none;
+    background: #eef4ce;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-family: system-ui;
+  }
+  #inicio:hover {
+    color: #c8c0b6;
+    background: rgba(255, 255, 255);
+  }
   #map {
     width: 98%;
     height: 98%;
