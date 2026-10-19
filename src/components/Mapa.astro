@@ -17,13 +17,19 @@ export interface Props {
   import mapboxgl from "mapbox-gl";
   import "mapbox-gl/dist/mapbox-gl.css";
 
-  import ic_baila from "../assets/iconos/1.png"; // 0
-  import ic_graba from "../assets/iconos/cassette.png"; // 1
-  import ic_punk from "../assets/iconos/punk.png"; // 2
-  import ic_rock from "../assets/iconos/rockPunk.png"; // 3
-  import ic_gay from "../assets/iconos/gay.png"; // 4
+  import ic_rock from "../assets/iconos/rockPunk.png"; // 1. rock
+  import ic_baila from "../assets/iconos/1.png"; // 2. bailable
+  import ic_graba from "../assets/iconos/cassette.png"; // 3. hip hop
+  import ic_gay from "../assets/iconos/queer.png"; // 4 gay
+  import ic_electro from "../assets/iconos/electro.png"; // 5 electrónica
 
-  const iconos = [ic_baila.src, ic_rock.src, ic_graba.src, ic_punk.src, ic_gay.src];
+  const iconos = [
+    ic_rock.src,
+    ic_baila.src,
+    ic_graba.src,
+    ic_electro.src,
+    ic_gay.src,
+  ];
 
   mapboxgl.accessToken =
     "pk.eyJ1IjoiYW5hdHRvbGFpIiwiYSI6InR5R3U4MmsifQ.rM6ZPt6QHPuMGAAOHFM4RQ";
@@ -53,7 +59,7 @@ export interface Props {
 
       el.style.width = `${width}px`;
       el.style.height = `${height}px`;
-      el.style.backgroundImage = `url('${iconos[marker.properties.icono]}')`;
+      el.style.backgroundImage = `url('${iconos[marker.properties.icono - 1]}')`;
       el.style.backgroundSize = "contain"; // Asegura que cubra todo el div circular
       el.style.backgroundRepeat = "no-repeat";
       el.style.backgroundPosition = "center";
