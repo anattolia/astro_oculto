@@ -78,7 +78,13 @@ export interface Props {
         .replace(/[\u0300-\u036f]/g, "");
 
       const popup = new mapboxgl.Popup().setHTML(
-        `<strong>${marker.properties.elegido ? `<a href= ../${enlaceLugar}>${marker.properties.nombre}</a>` : `<p>${marker.properties.nombre}</p>`} </strong><p>${marker.properties.añoInicio} - ${marker.properties.añoFin}<br>${marker.properties.direccion}<br>${marker.properties.genero}</p><br>${marker.properties.descripcion}</p>`,
+        `<strong>${marker.properties.elegido ? `<a href= ../${enlaceLugar}>${marker.properties.nombre}</a>` : `<p>${marker.properties.nombre}</p>`} 
+          </strong><p>${marker.properties.añoInicio} - ${marker.properties.añoFin}
+            <br>${marker.properties.genero}
+            <br>${marker.properties.direccion}
+            <br>${marker.properties.barrio}, ${marker.properties.localidad}</p>
+            <p>${marker.properties.descripcion}</p>
+            <p>Cerró por: ${marker.properties.causaCierre}</p>`,
       );
 
       new mapboxgl.Marker(el)
@@ -125,16 +131,18 @@ export interface Props {
     border: 1px black solid;
     cursor: pointer;
     padding: 0;
-    background-color: #eff4d2d1;
+    background-color: #f2c510d1;
     border-radius: 50%;
   }
 
   :global(.mapboxgl-popup) {
-    max-width: 400px;
+    max-width: 500px;
     font-family:
       Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans", Arial,
       sans-serif;
+    text-align: center;
     background-color: #eff4d2b3;
     padding: 1em 1.5em;
+    overflow: auto;
   }
 </style>

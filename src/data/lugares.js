@@ -222,7 +222,7 @@ export const lugares = {
         elegido: false,
         icono: 1,
         descripcion:
-          "Después del cierre de Barbarie, Andrea y Héctor abrieron Barbie en Cedritos, que sería el segundo de la serie de bares alternativos que seguirían abriendo y cerrando en el circuito independiente de la ciudad. En esa época terminó Delia y los Aminoácidos y nació Aterciopelados. Los gestores, eran los mismos decoradores, músicos y productores. Era un bar con concepto que ensamblaba objetos, sabores, sonidos y colores con el escenario abierto a la experimentación y las fiestas temáticas.",
+          "Después del cierre de Barbarie, Andrea y Héctor abrieron Barbie en Cedritos, el segundo de la serie de bares alternativos que seguirían abriendo y cerrando en el circuito independiente de la ciudad. En esa época terminó Delia y los Aminoácidos y nació Aterciopelados. Los gestores eran los mismos decoradores, músicos y productores. Era un bar con concepto que ensamblaba objetos, sabores, sonidos y colores con el escenario abierto a la experimentación y las fiestas temáticas.",
         links:
           "https://www.vice.com/es/article/barbie-y-barbarie-el-aporte-de-aterciopelados-a-la-vida-nocturna-capitalina-en-los-90/\n\nhttps://razonpublica.com/erase-una-vez-los-noventa-la-movida-rockera-alternativa-bogota/  https://cartelurbano.com/musica/hector-buitrago-escudero-andrea-echeverri# https://www.tiktok.com/@leyendasdecalle0/video/7508505343178050822",
         iconSize: [40, 40],
@@ -422,7 +422,7 @@ export const lugares = {
         elegido: false,
         icono: 1,
         descripcion:
-          "Veinte años de conciertos autogestionados en un sótano del Centro Comercial Puente Largo, al norte de Bogotá. Eso fue El Anónimo: casi dos mil fechas entre 2004 y 2023, con una particularidad que pocos escenarios en la ciudad lograron sostener — la mezcla de géneros. Ahí cabían el jazz, el rock, el folclore, la electrónica, la salsa, la fusión y las llamadas músicas del mundo, sin la lógica de nicho que suele encasillar a los bares independientes en un solo género.",
+          "Veinte años de conciertos autogestionados en un sótano del Centro Comercial Puente Largo, en el norte de Bogotá. Eso fue El Anónimo: casi dos mil fechas entre 2004 y 2023 de muchos géneros. Ahí cabían el jazz, el rock, el folclore, la electrónica, la salsa, la fusión y las llamadas músicas del mundo.",
         links:
           "https://www.elespectador.com/el-magazin-cultural/un-desahucio-anonimo-reverberaciones/  \nhttps://plazacapital.co/escena/6977-el-anonimo-el-bar-de-los-sonidos-alternativos-en-bogota",
         iconSize: [40, 40],
@@ -571,7 +571,7 @@ export const lugares = {
         genero: "Chucu-chucu, LGBTQ+",
         causaCierre: "Sin documentación",
         elegido: false,
-        icono: 4,
+        icono: 5,
         descripcion:
           "En la década de 1980 la rumba gay empezaba desde temprano en Fantasio, un bar en el Restrepo ubicado en el segundo piso de un edificio de los años sesenta. A este bar llegaba todo el mundo, no sólo la gente del sector. Cuentan que se veían carros diplomáticos y rumberos variados que compartían la condición de ilegalidad. La cerveza costaba $500 y se ponía chucu-chucu. Había un temor presente por la pandemia del VIH y la rumba era un espacio para liberar la ansiedad y el miedo.",
         links:
@@ -1213,7 +1213,7 @@ export const lugares = {
       type: "Feature",
       properties: {
         id: 52,
-        nombre: "Radio Berlin",
+        nombre: "Radio Berlín",
         añoInicio: 2010,
         añoFin: 2023,
         direccion: "Frente a la plaza de Toros",
