@@ -84,7 +84,7 @@ export interface Props {
             <br>${marker.properties.direccion}
             <br>${marker.properties.barrio}, ${marker.properties.localidad}</p>
             <p>${marker.properties.descripcion}</p>
-            <p>Cerró por: ${marker.properties.causaCierre}</p>`,
+            <p>Causa del cierre: ${marker.properties.causaCierre}</p>`,
       );
 
       new mapboxgl.Marker(el)
@@ -103,10 +103,11 @@ export interface Props {
     z-index: 9999;
     color: #474747d0;
     text-decoration: none;
-    background: #eef4ce;
+    background: #efe2da;
     padding: 2px 8px;
     border-radius: 5px;
     font-family: system-ui;
+    box-shadow: 2px 2px 2px #242424c9;
   }
   #inicio:hover {
     color: #c8c0b6;
@@ -122,7 +123,7 @@ export interface Props {
   }
 
   :global(a, a:visited, a:active) {
-    color: rgba(255, 72, 0, 0.9);
+    color: #e5276a;
     text-decoration: none;
   }
 
@@ -131,17 +132,25 @@ export interface Props {
     border: 1px black solid;
     cursor: pointer;
     padding: 0;
-    background-color: #f2c510d1;
+    background-color: #eecfe5b5;
     border-radius: 50%;
   }
 
+  :global(.marker:hover) {
+    display: block;
+    border: 1px black solid;
+    cursor: pointer;
+    padding: 0;
+    background-color: #ede2db;
+    border-radius: 50%;
+  }
   :global(.mapboxgl-popup) {
     max-width: 500px;
     font-family:
       Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans", Arial,
       sans-serif;
     text-align: center;
-    background-color: #eff4d2b3;
+    background-color: #ede2dbb5;
     padding: 1em 1.5em;
     overflow: auto;
   }

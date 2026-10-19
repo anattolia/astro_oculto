@@ -65,7 +65,7 @@ export const lugares = {
         localidad: "La Candelaria",
         genero: "Rock, funk, new wave, salsa",
         causaCierre: "Compra del predio (¿especulación inmobiliaria?)",
-        elegido: false,
+        elegido: true,
         icono: 1,
         descripcion:
           "Uno de los infaltables de la rumba, la cultura y la bohemia de la Bogotá de los años 80 y 90. Estaba ubicado originalmente en un sótano sobre la avenida Jiménez con carera. 4. La cerveza era barata, no había mesas, ni quien se sentara: se bailaba rock y salsa hasta que sudaban las paredes y el techo. También se usó para ensayar obras de teatro cuando no estaba abierto como bar y se volvió un ícono para la comunidad artística bogotana del momento.",
@@ -87,11 +87,11 @@ export const lugares = {
         añoFin: 2005,
         direccion:
           "cll 59 # 7 (Tuvo dos sedes más en la av. Jiménez con 4 y en la cll 60 con 9)",
-        barrio: "",
+        barrio: "Chapinero",
         localidad: "Chapinero",
         genero: "Rock, funk, new wave, salsa",
         causaCierre: "Compra del predio (¿especulación inmobiliaria?)",
-        elegido: false,
+        elegido: true,
         icono: 1,
         descripcion:
           "Uno de los infaltables de la rumba, la cultura y la bohemia de la Bogotá de los años 80 y 90. Estaba ubicado originalmente en un sótano sobre la avenida Jiménez con carera. 4. La cerveza era barata, no había mesas, ni quien se sentara: se bailaba rock y salsa hasta que sudaban las paredes y el techo. También se usó para ensayar obras de teatro cuando no estaba abierto como bar y se volvió un ícono para la comunidad artística bogotana del momento.",
@@ -113,11 +113,11 @@ export const lugares = {
         añoFin: 2005,
         direccion:
           "cll 60 # 9  (Tuvo dos sedes más en la av. Jiménez con 4 y en la cll 59 con 7)",
-        barrio: "",
+        barrio: "Chapinero central",
         localidad: "Chapinero",
         genero: "Rock, funk, new wave, salsa",
         causaCierre: "Compra del predio (¿especulación inmobiliaria?)",
-        elegido: false,
+        elegido: true,
         icono: 1,
         descripcion:
           "Uno de los infaltables de la rumba, la cultura y la bohemia de la Bogotá de los años 80 y 90. Estaba ubicado originalmente en un sótano sobre la avenida Jiménez con carera. 4. La cerveza era barata, no había mesas, ni quien se sentara: se bailaba rock y salsa hasta que sudaban las paredes y el techo. También se usó para ensayar obras de teatro cuando no estaba abierto como bar y se volvió un ícono para la comunidad artística bogotana del momento.",
@@ -144,7 +144,7 @@ export const lugares = {
         causaCierre:
           "Hostigamiento y violencia. En 1983 su propietario fue asesinado",
         elegido: false,
-        icono: 4,
+        icono: 5,
         descripcion:
           "Fue un bar forzosamente clandestino debido a la violencia, la prohibición y la persecución a las disidencias sexuales. Según la tesis de Juan Leonardo Bello Rodríguez, 'Tras las Huellas del Arcoíris', Arlequín fue el primer bar gay de Bogotá. Quedaba en la calle 23 entre carreras 5 y 6, según cuentan, estaba decorado con cortinas de terciopelo rojo, un enorme florero de gladiolos y un piano rojo.\nResistió algo más de una década y tuvo un rol importantísimo en la defensa y el reconocimiento de derechos de la comunidad LGBTIQ+.",
         links:
@@ -235,7 +235,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 11,
+        id: 10,
         nombre: "Bol&Bar",
         añoInicio: 1993,
         añoFin: "¿1994?",
@@ -259,7 +259,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 12,
+        id: 11,
         nombre: "Casa Volketa",
         añoInicio: 2009,
         añoFin: 2018,
@@ -285,7 +285,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 13,
+        id: 12,
         nombre: "Cha Cha",
         añoInicio: 2004,
         añoFin: 2009,
@@ -311,7 +311,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 14,
+        id: 13,
         nombre: "Chapinero Mutante",
         añoInicio: "¿Mediados de la década de 1990?",
         añoFin: "¿?",
@@ -336,7 +336,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 15,
+        id: 14,
         nombre: "Canela",
         añoInicio: 1992,
         añoFin: "¿?",
@@ -360,7 +360,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 16,
+        id: 15,
         nombre: "Cinema club",
         añoInicio: 1990,
         añoFin: 2010,
@@ -385,7 +385,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 18,
+        id: 16,
         nombre: "CRAB´s (centro de rock, arte y blues)",
         añoInicio: 1999,
         añoFin: 2011,
@@ -410,7 +410,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 20,
+        id: 17,
         nombre: "El Anónimo",
         añoInicio: 2004,
         añoFin: 2023,
@@ -435,7 +435,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 21,
+        id: 18,
         nombre: "El Chamán",
         añoInicio: 2018,
         añoFin: 2020,
@@ -459,7 +459,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 22,
+        id: 19,
         nombre: "El Goce",
         añoInicio: 1978,
         añoFin: 2018,
@@ -485,7 +485,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 23,
+        id: 20,
         nombre: "Estación central",
         añoInicio: 1988,
         añoFin: 1990,
@@ -511,7 +511,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 24,
+        id: 21,
         nombre: "Familia Ayara",
         añoInicio: 1996,
         añoFin: 2020,
@@ -536,7 +536,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 25,
+        id: 22,
         nombre: "Familia Ayara",
         añoInicio: 1996,
         añoFin: 2020,
@@ -561,7 +561,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 26,
+        id: 23,
         nombre: "Fantasio",
         añoInicio: "Década de 1980",
         añoFin: "¿?",
@@ -586,7 +586,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 27,
+        id: 24,
         nombre: "La FlorHisteria",
         añoInicio: 1990,
         añoFin: 1994,
@@ -611,7 +611,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 28,
+        id: 25,
         nombre: "Gótica",
         añoInicio: 1996,
         añoFin: 2009,
@@ -636,7 +636,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 29,
+        id: 26,
         nombre: "Heaven",
         añoInicio: "¿?",
         añoFin: "¿?",
@@ -660,7 +660,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 30,
+        id: 27,
         nombre: "InVitro",
         añoInicio: 1999,
         añoFin: 2013,
@@ -686,10 +686,10 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 31,
+        id: 28,
         nombre: "Kaliman",
         añoInicio: 1994,
-        añoFin: "",
+        añoFin: "¿?",
         direccion: "cll 82 # 14",
         barrio: "Lago Gaitán",
         localidad: "Chapinero",
@@ -712,7 +712,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 32,
+        id: 29,
         nombre: "Kámara de Gaz",
         añoInicio: 1992,
         añoFin: 1995,
@@ -736,7 +736,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 33,
+        id: 30,
         nombre: "Keops",
         añoInicio: 1982,
         añoFin: 1992,
@@ -761,7 +761,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 34,
+        id: 31,
         nombre: "La Bomba",
         añoInicio: "mediados de los años 60",
         añoFin: "Mediados de la década de 1970",
@@ -787,7 +787,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 35,
+        id: 32,
         nombre: "La Casona",
         añoInicio: 1992,
         añoFin: 1994,
@@ -813,7 +813,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 36,
+        id: 33,
         nombre: "La Estrella del Patillal",
         añoInicio: "1986?",
         añoFin: "¿?",
@@ -839,7 +839,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 37,
+        id: 34,
         nombre: "La Gioconda",
         añoInicio: 1965,
         añoFin: "Finales de la dédaca de 1980",
@@ -864,7 +864,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 38,
+        id: 35,
         nombre: "La Normanda",
         añoInicio: 1968,
         añoFin: 2022,
@@ -890,7 +890,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 39,
+        id: 36,
         nombre: "La Sala",
         añoInicio: "¿?",
         añoFin: "¿Finales de la década del 2000?",
@@ -915,7 +915,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 40,
+        id: 37,
         nombre: "La Teja Corrida",
         añoInicio: "Inicios de la dédaca de 1980",
         añoFin: "Finales de la dédaca de 1980",
@@ -940,7 +940,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 41,
+        id: 38,
         nombre: "Las Moscas",
         añoInicio: "Mediados de la década de 1990",
         añoFin: "Finales de la dédaca de 1990",
@@ -965,7 +965,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 42,
+        id: 39,
         nombre: "Macondo",
         añoInicio: "Finales de la década de 1990",
         añoFin: "Mediados de la década del 2000",
@@ -989,7 +989,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 43,
+        id: 40,
         nombre: "Music factory",
         añoInicio: "¿?",
         añoFin: 1995,
@@ -1014,7 +1014,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 44,
+        id: 41,
         nombre: "Nutabes",
         añoInicio: 1990,
         añoFin: 2000,
@@ -1039,7 +1039,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 45,
+        id: 42,
         nombre: "Ozzy bar",
         añoInicio: 2007,
         añoFin: "¿?",
@@ -1064,13 +1064,13 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 46,
+        id: 43,
         nombre: "Ozzy bar",
         añoInicio: 1997,
         añoFin: "¿?",
         direccion:
           "cra 100 # 23-90 (Es la dirección actual. La primera sede era en Fontibón pero no sabemos si aquí mismo)",
-        barrio: "",
+        barrio: "Fontibón",
         localidad: "Fontibón",
         genero: "Metal, hard rock",
         causaCierre: "Traslado",
@@ -1089,14 +1089,14 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 47,
+        id: 44,
         nombre: "Pins",
         añoInicio: "¿?",
         añoFin: "¿?",
         direccion: "cll 50B sur # 35",
         barrio: "Fátima",
         localidad: "Tunjuelito",
-        genero: "",
+        genero: "¿?",
         causaCierre: "¿?",
         elegido: false,
         icono: 2,
@@ -1114,7 +1114,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 48,
+        id: 45,
         nombre: "Piscis",
         añoInicio: "¿1980?",
         añoFin: "¿?",
@@ -1123,7 +1123,7 @@ export const lugares = {
         localidad: "Santa Fe",
         genero: "LGBTQ+",
         causaCierre: "Muerte del dueño",
-        elegido: false,
+        elegido: true,
         icono: 5,
         descripcion:
           'Bar en el centro de Bogotá administrado por Plinio Carvajal, activo justo antes de que empezara la década de los noventa (finales de los ochenta). Era sinónimo de transgresión: tinas con hombres bañados en gelatina y leche condensada, trapecistas sobrevolando al público, una "iglesia" interna con hombres vestidos de santos a los que la gente podía tocar y pedirles milagros. Manuel Antonio Velandia — activista pionero en la prevención del VIH en Colombia — recuerda que ahí, por miedo a que los infectados no llegaran a diciembre, Plinio organizaba la Navidad en junio, con un pesebre de personas reales y una mujer trans como la Virgen María. El bar tenía publicidad de Plinio en la revista Ventana Gay, la primera publicación gay del país. Desapareció con la muerte de Plinio.\n\n¨El movimiento homosexual liderado por Manuel Velandia desarrolló la publicación Ventana Gay en la que había publicidad de Plinio, así como reflexiones, noticias y opiniones sobre la comunidad. Luego, según cuenta Manuel, sería Edison quien abriría las puertas al activismo permitiendo la circulación de revistas y folletos de prevención contra el VIH, pero también en sus tarimas, algo que ya había adelantado Plinio de una manera menos organizada.¨',
@@ -1139,13 +1139,13 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 49,
+        id: 46,
         nombre: "Las Calles de San Francisco",
         añoInicio: "¿?",
         añoFin: "¿?",
         direccion: "¿cra 10 #22?",
-        barrio: "Centro",
-        localidad: "",
+        barrio: "Santa Fe Alameda",
+        localidad: "Santa Fe",
         genero: "LGBTQ+",
         causaCierre: "¿?",
         elegido: false,
@@ -1163,7 +1163,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 50,
+        id: 47,
         nombre: "Piso 3",
         añoInicio: 2004,
         añoFin: 2009,
@@ -1188,7 +1188,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 51,
+        id: 48,
         nombre: "Púrpura",
         añoInicio: "¿1990?",
         añoFin: "Activo",
@@ -1212,7 +1212,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 52,
+        id: 49,
         nombre: "Radio Berlín",
         añoInicio: 2010,
         añoFin: 2023,
@@ -1238,7 +1238,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 53,
+        id: 50,
         nombre: "Ramona Antigua",
         añoInicio: 1980,
         añoFin: "¿?",
@@ -1262,7 +1262,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 55,
+        id: 51,
         nombre: "Rotten Rats",
         añoInicio: "¿?",
         añoFin: "¿?",
@@ -1270,7 +1270,7 @@ export const lugares = {
         barrio: "Chicó Norte",
         localidad: "Chapinero",
         genero: "Punk",
-        causaCierre: "",
+        causaCierre: "¿?",
         elegido: false,
         icono: 1,
         descripcion:
@@ -1286,7 +1286,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 56,
+        id: 52,
         nombre: "Socorro",
         añoInicio: 2000,
         añoFin: 2010,
@@ -1311,14 +1311,15 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 57,
+        id: 53,
         nombre: "Terraza Pasteur",
         añoInicio: 1987,
         añoFin: 2010,
         direccion: "cra 7 # 23-56",
         barrio: "Las Nieves",
         localidad: "Santa Fe",
-        genero: "",
+        genero:
+          "De todo un poco, según el lugar: rock, salsa, vallenato, metal, reggae",
         causaCierre:
           "Cerró durante un tiempo por cuestiones judiciales relacionadas con la prohibición de consumo de licor dentro del centro comercial. Los sitios se quebraron o se mudaron a otras partes.",
         elegido: false,
@@ -1337,7 +1338,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 58,
+        id: 54,
         nombre: "Tocata y fuga",
         añoInicio: 1999,
         añoFin: 2003,
@@ -1345,11 +1346,11 @@ export const lugares = {
         barrio: "La Merced",
         localidad: "Santa Fe",
         genero: "Jazz",
-        causaCierre: "",
-        elegido: false,
+        causaCierre: "¿?",
+        elegido: true,
         icono: 2,
         descripcion:
-          "Fundado por Beatriz Castaño y su hijo, el reconocido músico Juan Sebastián Monsalve, el establecimiento estuvo activo durante un poco más de cuatro años. A pesar de su corta trayectoria, se convirtió en un pilar fundamental para la escena musical en vivo de la capital colombiana, sirviendo como laboratorio y punto de partida para bandas legendarias como La 33 o Curupira",
+          "Fundado por Beatriz Castaño y su hijo, el bajista y compositor Juan Sebastián Monsalve, el establecimiento estuvo activo durante un poco más de cuatro años. A pesar de su corta trayectoria, se convirtió en un pilar fundamental para la escena musical en vivo de la capital colombiana, sirviendo como laboratorio y punto de partida para bandas legendarias como La 33 o Curupira",
         links: "Guía práctica de navegación por el universo de Jazz al Parque",
         iconSize: [40, 40],
       },
@@ -1361,7 +1362,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 59,
+        id: 55,
         nombre: "Transilvania",
         añoInicio: 1993,
         añoFin: 1995,
@@ -1369,7 +1370,7 @@ export const lugares = {
         barrio: "Chapinero central",
         localidad: "Chapinero",
         genero: "Rock",
-        causaCierre: "",
+        causaCierre: "¿?",
         elegido: false,
         icono: 1,
         descripcion:
@@ -1386,7 +1387,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 60,
+        id: 56,
         nombre: "tvg (Te Veo Grave)",
         añoInicio: 1991,
         añoFin: 1992,
@@ -1411,7 +1412,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 61,
+        id: 57,
         nombre: "Vallenato: El Rincón de Rafael Ricardo",
         añoInicio: 1995,
         añoFin: "¿?",
@@ -1419,10 +1420,10 @@ export const lugares = {
         barrio: "El Retiro",
         localidad: "Chapinero",
         genero: "Vallenato",
-        causaCierre: "",
+        causaCierre: "¿?",
         elegido: false,
         icono: 2,
-        descripcion: "",
+        descripcion: "¿?",
         links: "https://www.eltiempo.com/amp/archivo/documento/CMS-3596903",
         iconSize: [40, 40],
       },
@@ -1434,7 +1435,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 62,
+        id: 58,
         nombre: "Vena Arteria",
         añoInicio: 1992,
         añoFin: 1992,
@@ -1443,8 +1444,8 @@ export const lugares = {
         localidad: "Santa Fe",
         genero: "Punk, rock, funk, ska",
         causaCierre:
-          "cumplió el propósito efímero para el cual fue creado y por la naturaleza transitoria de la escena subterránea de la época",
-        elegido: false,
+          "Cumplió el propósito efímero para el cual fue creado y por la naturaleza transitoria de la escena subterránea de la época",
+        elegido: true,
         icono: 1,
         descripcion:
           "Apareció para dar lugar a un concierto de Mano Negra, famosa agrupación franco-española, que estaba buscando una locación en la ciudad para tocar en Bogotá.\nUno de los socios fundadores del bar decidió arrendar una bodega y adecuar el sitio para el concierto, lo que resultó en un éxito total. El concierto tuvo una particularidad, todo era gratis, desde la entrada hasta la cerveza. Después de este concierto funcionó un tiempo más, pero no alcanzó a durar más de seis meses.",
@@ -1460,19 +1461,19 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 63,
-        nombre: "Vértigo Campoelias",
+        id: 59,
+        nombre: "Vértigo Campo Elías",
         añoInicio: 1994,
         añoFin: 1998,
         direccion: "cra 13A # 34-10",
         barrio: "Sagrado corazón",
         localidad: "Santa Fe",
         genero: "Post punk, grunge, rock alternativo",
-        causaCierre: "Cambios en la vida de su fundador",
+        causaCierre: "Cambios en la vida de su fundador.",
         elegido: true,
         icono: 1,
         descripcion:
-          "Fue un icónico y legendario bar de rock y música alternativa ubicada en una casa esquinera con muchos cuartos y luces negras y de neón. Fundado por Carlos Ramirez (El Mono), tras la masacre de Pozzetto (de ahí su particular nombre, en referencia al asesino Campo Elías Delgado), Vértigo nace inspirado en Barbarie, y contando con una colección de vinilos de 12.000 títulos. Fue clave para la escena musical local, sirviendo de escenario para bandas emergentes como La Derecha, Estados Alterados, La Pestilencia, Juanita Dientes Verdes y 1280 Almas.",
+          "Legendario bar de rock y música alternativa ubicado en una casa esquinera con muchos cuartos y luces negras y de neón. Fundado por Carlos Ramírez (El Mono) tras la masacre de Pozzetto (de ahí su particular nombre, en referencia al asesino Campo Elías Delgado), Vértigo nació inspirado en Barbarie, con una colección de 12.000 vinilos. Fue clave para la escena musical local, sirviendo de escenario para bandas emergentes como La Derecha, Estados Alterados, La Pestilencia, Juanita Dientes Verdes y 1280 Almas.",
         links:
           "https://bibliotecacinemateca.idartes.gov.co/cgi-bin/koha/opac-detail.pl?biblionumber=88811\n\nhttps://www.instagram.com/p/ClCVIT2PMmZ/",
         iconSize: [40, 40],
@@ -1485,7 +1486,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 64,
+        id: 60,
         nombre: "Vértigo Campoelias",
         añoInicio: 1994,
         añoFin: 1998,
@@ -1510,7 +1511,7 @@ export const lugares = {
     {
       type: "Feature",
       properties: {
-        id: 65,
+        id: 61,
         nombre: "Vértigo Campoelias",
         añoInicio: 1994,
         añoFin: 1998,
@@ -1518,7 +1519,7 @@ export const lugares = {
         barrio: "Chapinero central",
         localidad: "Chapinero",
         genero: "Post punk, grunge, rock alternativo",
-        causaCierre: "Cambios en la vida de su fundador",
+        causaCierre: "Cambios en la vida de su fundador.",
         elegido: true,
         icono: 1,
         descripcion:
@@ -1529,13 +1530,13 @@ export const lugares = {
       },
       geometry: {
         type: "Point",
-        coordinates: [-74.0657501761339, 4.64059354333313],
+        coordinates: [-74.06580833948405, 4.640167828768701],
       },
     },
     {
       type: "Feature",
       properties: {
-        id: 66,
+        id: 62,
         nombre: "Zona Franca",
         añoInicio: "1995 (?)",
         añoFin: 2002,
@@ -1544,7 +1545,7 @@ export const lugares = {
         barrio: "El Lago",
         localidad: "Chapinero",
         genero: "LGBTQ+",
-        causaCierre: "Creación de Theatron",
+        causaCierre: "Se creó en su lugar Theatron.",
         elegido: false,
         icono: 5,
         descripcion:

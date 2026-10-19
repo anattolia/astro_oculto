@@ -1,10 +1,131 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+// Importar lista de lugares
+import { lugares } from "../data/lugares.js";
 
+console.log(lugares.features[60]);
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<h1>Vertigo Campo Elías</h1>
+  <section class="container">
+    <div class="info">
+      <!--  <img src={foto.src} alt="Puerta de Barbarie" />-->
+      <div>
+        <h1>Vértigo Campo Elías</h1>
+        <h2>
+          {lugares.features[58]?.properties.añoInicio} - {
+            lugares.features[58]?.properties.añoFin
+          }
+        </h2>
+        <h2>{lugares.features[58]?.properties.genero}</h2>
+        <p>{lugares.features[58]?.properties.descripcion}</p>
+      </div>
+    </div>
+    <a class="boton" href="../ciudad">volver al mapa</a>
+  </section>
 </Layout>
+
+<script></script>
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap");
+
+  .container {
+    font-family:
+      Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans", Arial,
+      sans-serif;
+    padding: 3em;
+    background-color: #eff4d2b3;
+    background: linear-gradient(68deg, #6f4d41 0%, #e1b954 18%, #f5cee7 45%)
+      border-box;
+    color: black;
+    font-family: system-ui;
+    min-height: 80vh;
+  }
+
+  h1 {
+    font-size: 4em;
+    font-family: "Ga Maamli", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #191818e0;
+    text-align: center;
+    margin: 0;
+  }
+
+  h2 {
+    margin: 0;
+    font-weight: normal;
+    color: #111827;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  p {
+    color: #111827;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.006em;
+    margin: 1.5em 0;
+  }
+
+  img {
+    height: 80vh;
+  }
+
+  a,
+  a:visited,
+  a:active {
+    color: #474747d0;
+    text-decoration: none;
+    background: #eef4ce;
+    padding: 2px 7px;
+    border-radius: 5px;
+    font-family: system-ui;
+  }
+
+  a:hover {
+    color: #c8c0b6;
+    background: rgba(255, 255, 255);
+  }
+
+  .info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    gap: 7em;
+    padding: 1em 7em 1em 6em;
+  }
+
+  .boton {
+    color: #474747d0;
+    text-decoration: none;
+    background: #eef4ce84;
+    padding: 6px 6px;
+    border-radius: 5px;
+    font-family: system-ui;
+    font-size: 0.6em;
+    position: fixed;
+    bottom: 3vh;
+    right: 2vw;
+  }
+
+  @media screen and (max-height: 368px) {
+  }
+
+  @media screen and (max-width: 768px) {
+    #container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    h1 {
+      margin-top: 35vh;
+      padding: inherit;
+    }
+  }
+</style>
