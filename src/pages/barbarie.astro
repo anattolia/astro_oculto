@@ -10,22 +10,20 @@ import foto from "../assets/img/barbarie/barbarie_murdo_macdonald_fb.jpg"; // 1.
 
 <Layout>
   <section class="container">
-    
-    
     <div class="info">
       <img src={foto.src} alt="Puerta de Barbarie" />
       <div>
         <h1>Barbarie</h1>
-    <h2>
-      {lugares.features[7]?.properties.añoInicio} - {
-        lugares.features[7]?.properties.añoFin
-      }
-    </h2>
-    <h2>{lugares.features[7]?.properties.genero}</h2>
-    <p>{lugares.features[7]?.properties.descripcion}</p>
+        <h2>
+          {lugares.features[7]?.properties.añoInicio} - {
+            lugares.features[7]?.properties.añoFin
+          }
+        </h2>
+        <h2>{lugares.features[7]?.properties.genero}</h2>
+        <p>{lugares.features[7]?.properties.descripcion}</p>
       </div>
-      
     </div>
+    <a class="boton" href="../mapa">volver al mapa</a>
   </section>
 </Layout>
 
@@ -41,7 +39,8 @@ import foto from "../assets/img/barbarie/barbarie_murdo_macdonald_fb.jpg"; // 1.
       sans-serif;
     padding: 3em;
     background-color: #eff4d2b3;
-   background: linear-gradient(68deg, #6f4d41 0%, #e1b954 18%, #f5cee7 45%) border-box;
+    background: linear-gradient(68deg, #6f4d41 0%, #e1b954 18%, #f5cee7 45%)
+      border-box;
     color: black;
     font-family: system-ui;
   }
@@ -102,6 +101,19 @@ import foto from "../assets/img/barbarie/barbarie_murdo_macdonald_fb.jpg"; // 1.
     justify-content: center;
     gap: 7em;
     padding: 1em 7em 1em 6em;
+  }
+
+  .boton {
+    color: #474747d0;
+    text-decoration: none;
+    background: #eef4ce84;
+    padding: 6px 6px;
+    border-radius: 5px;
+    font-family: system-ui;
+    font-size: 0.6em;
+    position: fixed;
+    bottom: 3vh;
+    right: 2vw;
   }
 
   @media screen and (max-height: 368px) {

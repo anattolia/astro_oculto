@@ -512,7 +512,7 @@ export const lugares = {
       type: "Feature",
       properties: {
         id: 24,
-        nombre: "Familia ayara",
+        nombre: "Familia Ayara",
         añoInicio: 1996,
         añoFin: 2020,
         direccion: "av Caracas # 39-50",
@@ -537,7 +537,7 @@ export const lugares = {
       type: "Feature",
       properties: {
         id: 25,
-        nombre: "Familia ayara",
+        nombre: "Familia Ayara",
         añoInicio: 1996,
         añoFin: 2020,
         direccion: "cra 7 # 50-20",
