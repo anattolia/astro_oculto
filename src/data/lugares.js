@@ -172,8 +172,10 @@ export const lugares = {
         icono: 1,
         descripcion:
           "Quedaba en la calle 86 con carrera 13 A. Era un sitio relajado que abría de domingo a domingo. A partir de las 2 pm. funcionaba como café en una casa con patio y lavadero, tienda de discos en el segundo piso y una tienda de moda llamada Lokomodo, que ofrecía tanto ropa de segunda, como diseños propios raros y alternos.",
-        links:
-          "Barbie y Barbarie: el aporte de Aterciopelados a la vida nocturna capitalina en los 90  https://cartelurbano.com/musica/hector-buitrago-escudero-andrea-echeverri",
+        links: [
+          "Barbie y Barbarie: el aporte de Aterciopelados a la vida nocturna capitalina en los 90",
+          "https://cartelurbano.com/musica/hector-buitrago-escudero-andrea-echeverri",
+        ],
         iconSize: [40, 40],
       },
       geometry: {
@@ -198,8 +200,32 @@ export const lugares = {
         icono: 1,
         descripcion:
           "Ubicado en una casona en la Candelaria, que también era vivienda y ensayadero, fue el epicentro del rock under. Creado por Héctor Buitrago y Andrea Echeverri antes de formar Aterciopelados, funcionó hasta 1990 y fue el semillero de la movida alternativa de Bogotá.\n\nEn apenas un año de funcionamiento Barbarie se convirtió en un lugar emblemático y nodal para aquellos que compartían inquietudes y curiosidades estéticas, artísticas, cinéfilas y musicales similares. Fue un lugar de experimentación, afectos, amores y uniones creativas. Al menos una vez al mes, tocaba Delia y Los Aminoácidos, y pasaron por allí, en sus inicios, bandas como Estados Alterados, KGB, El Grupo 9, SB2 y Le’Kaffage entre otros. Finalmente, en octubre de 1990, debido a las quejas de los vecinos, la policía hizo el cierre definitivo del lugar.",
-        links:
-          "https://www.vice.com/es/article/barbie-y-barbarie-el-aporte-de-aterciopelados-a-la-vida-nocturna-capitalina-en-los-90/\n\nhttps://razonpublica.com/erase-una-vez-los-noventa-la-movida-rockera-alternativa-bogota/ \n\nhttps://www.instagram.com/reels/DKF5najyXyb/ \n\nhttps://www.instagram.com/reel/DPgyeaGEuCW/ \n\nFOTO ARCHIVO PERSONAL: https://www.facebook.com/groups/19814545280/permalink/10164463078460281/?rdid=3VRWnBaBATmKtqIG#",
+        links: [
+          {
+            titulo:
+              "'Barbie y Barbarie: el aporte de Aterciopelados a la vida nocturna capitalina en los 90'",
+            enlace:
+              "https://www.vice.com/es/article/barbie-y-barbarie-el-aporte-de-aterciopelados-a-la-vida-nocturna-capitalina-en-los-90/",
+          },
+          {
+            titulo: "'Érase una vez los noventa: La movida rockera alternativa en Bogotá'",
+            enlace:
+              "https://razonpublica.com/erase-una-vez-los-noventa-la-movida-rockera-alternativa-bogota/",
+          },
+          {
+            titulo: "@leyendasdecalle - Instagram",
+            enlace: "https://www.instagram.com/reels/DKF5najyXyb/",
+          },
+          {
+            titulo: "La Nevera Sonora - Instagram",
+            enlace: "https://www.instagram.com/reel/DPgyeaGEuCW/",
+          },
+          {
+            titulo: "Foto de la entrada de Barbarie en Facebook",
+            enlace:
+              "https://www.facebook.com/groups/19814545280/permalink/10164463078460281/?rdid=3VRWnBaBATmKtqIG#",
+          },
+        ],
         iconSize: [40, 40],
       },
       geometry: {
