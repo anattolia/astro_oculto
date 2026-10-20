@@ -260,12 +260,12 @@ export const lugares = {
         localidad: "Usaquén",
         genero: "Rock",
         causaCierre: "Ruptura sentimental entre Héctor y Andrea",
-        elegido: false,
+        elegido: true,
         icono: 1,
         descripcion:
           "Después del cierre de Barbarie, Andrea y Héctor abrieron Barbie en Cedritos, el segundo de la serie de bares alternativos que seguirían abriendo y cerrando en el circuito independiente de la ciudad. En esa época terminó Delia y los Aminoácidos y nació Aterciopelados. Los gestores eran los mismos decoradores, músicos y productores. Era un bar con concepto que ensamblaba objetos, sabores, sonidos y colores con el escenario abierto a la experimentación y las fiestas temáticas.",
         links:
-          "https://www.vice.com/es/article/barbie-y-barbarie-el-aporte-de-aterciopelados-a-la-vida-nocturna-capitalina-en-los-90/\n\nhttps://razonpublica.com/erase-una-vez-los-noventa-la-movida-rockera-alternativa-bogota/  https://cartelurbano.com/musica/hector-buitrago-escudero-andrea-echeverri# https://www.tiktok.com/@leyendasdecalle0/video/7508505343178050822",
+          [{titulo: "'Barbie y Barbarie: El aporte de Aterciopelados a la vida nocturna capitalina en los 90' - Vice", enlace: "https://www.vice.com/es/article/barbie-y-barbarie-el-aporte-de-aterciopelados-a-la-vida-nocturna-capitalina-en-los-90/"}, {titulo: "'Érase una vez los noventa: la movida rockera alternativa en Bogotá' - Razón Pública", enlace: "https://razonpublica.com/erase-una-vez-los-noventa-la-movida-rockera-alternativa-bogota/"}, {titulo: "Entrevista con Héctor Buitrago y Andrea Echeverri - Cartel Urbano", enlace: "https://cartelurbano.com/musica/hector-buitrago-escudero-andrea-echeverri#"}, {titulo: "Video de @leyendasdecalle - Instagram", enlace: "https://www.instagram.com/reels/DKF5najyXyb/"}],
         iconSize: [40, 40],
       },
       geometry: {
@@ -1468,12 +1468,12 @@ export const lugares = {
         localidad: "Chapinero",
         genero: "Rock",
         causaCierre: "¿?",
-        elegido: false,
+        elegido: true,
         icono: 1,
         descripcion:
-          "Con una atmósfera lúgubre, gótica e industrial este espacio era amplio y estaba acondicionado para conciertos y fiestas capaces de albergar un aforo importante, a diferencia de otros espacios dedicados a la escena independiente. Se dice que un lazo grueso colgaba del techo y era usado por los asistentes para colgarse y balancearse. Organizó el primer concierto de Caifanes en Bogotá y con la producción de eventos de magnitud significativa demostró la posibilidad de hacer de los conciertos un negocio sostenible.",
+          "Con una atmósfera lúgubre, gótica e industrial este espacio era amplio y estaba acondicionado para conciertos y fiestas capaces de albergar un aforo importante, a diferencia de otros espacios dedicados a la escena independiente. Se dice que un lazo grueso colgaba del techo y era usado por los asistentes para colgarse y balancearse. Cuentan también que allí se organizó el primer concierto de Caifanes en Bogotá, con Aterciopelados como teloneros.",
         links:
-          "Ecos de la noche: lugares que han forjado la cultura bogotana                                                La New Older - TRANSILVANIA BAR, La Ley del Ruido 🪩🖤 Bogotá, año... | Facebook",
+          [{}],
         iconSize: [40, 40],
       },
       geometry: {
