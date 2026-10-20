@@ -60,7 +60,7 @@ export const lugares = {
         añoInicio: 1981,
         añoFin: 2005,
         direccion:
-          "av. Jiménez # 4\n\n(Luego tuvo dos sedes más en la cll 59 con 7 y en la cll 60 con 9)",
+          "cll 12d # 4-34 \n\n(Luego tuvo dos sedes más en la cll 59 con 7 y en la cll 60 con 9)",
         barrio: "Las Aguas",
         localidad: "La Candelaria",
         genero: "Rock, funk, new wave, salsa",
@@ -89,7 +89,7 @@ export const lugares = {
       },
       geometry: {
         type: "Point",
-        coordinates: [-74.0705097338053, 4.60080505847399],
+        coordinates: [-74.07073697582878, 4.600631469278485]
       },
     },
     {
@@ -729,7 +729,7 @@ export const lugares = {
         elegido: true,
         icono: 1,
         descripcion:
-          "Icónico establecimiento de la escena alternativa bogotana que nació a finales de la década de 1990. Además de ser famoso por sus fiestas a mitad de semana, fue el hogar que vio nacer el espacio audiovisual In Vitro Visual en 2003 que, posteriormente, evolucionó para convertirse en lo que hoy se conoce como el festival de cine BOGOSHORTS.",
+          "Icónico establecimiento de la escena alternativa bogotana que nació a finales de la década de 1990. Además de ser famoso por sus fiestas a mitad de semana, fue el hogar que vio nacer el espacio audiovisual InVitro Visual en 2003 que, posteriormente, evolucionó para convertirse en lo que hoy se conoce como el festival de cine BOGOSHORTS.",
         links: [
           {
             titulo: "Chapinero Musical",
@@ -748,6 +748,9 @@ export const lugares = {
             titulo: "'La rumba de los miércoles' - El Tiempo",
             enlace: "https://www.eltiempo.com/archivo/documento/mam-1675167",
           },
+          {
+            titulo: "Nostalgia bogotana - Instagram",
+            enlace: "https://www.instagram.com/p/CJyd9LJJ6jV/",}
         ],
         iconSize: [40, 40],
       },
