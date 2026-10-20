@@ -208,7 +208,8 @@ export const lugares = {
               "https://www.vice.com/es/article/barbie-y-barbarie-el-aporte-de-aterciopelados-a-la-vida-nocturna-capitalina-en-los-90/",
           },
           {
-            titulo: "'Érase una vez los noventa: La movida rockera alternativa en Bogotá'",
+            titulo:
+              "'Érase una vez los noventa: La movida rockera alternativa en Bogotá'",
             enlace:
               "https://razonpublica.com/erase-una-vez-los-noventa-la-movida-rockera-alternativa-bogota/",
           },
@@ -498,14 +499,29 @@ export const lugares = {
         elegido: true,
         icono: 2,
         descripcion:
-          "Gustavo Bustamante, Cesar Villegas (Pagano) y Juan Gaviria, fascinados por la salsa de Nueva York, decidieron proponer una rumba distinta de todo lo que había en Bogotá. Se ubicaba en el centro, en la cr 13A  con calle 23 y fue un epicentro salsero donde convergían literatura, música en vivo, debate político, baile y amistad... Se hacía lanzamientos de libros, se leían textos, se pasaban documentales o se hacían recitales.",
-        links:
-          "https://www.semana.com/agenda/articulo/el-goce-pagano-esta-de-luto-7-recuerdos-y-5-canciones/71855/ , https://www.elespectador.com/el-magazin-cultural/el-goce-pagano-una-descarga-de-cuarenta-anos-article/  https://www.las2orillas.co/el-goce-pagano-donde-gabo-fue-feliz/",
+          "A finales de la década de 1970 Gustavo Bustamante, César Villegas (Pagano) y Juan Gaviria decidieron proponer una rumba salsera y distinta en Bogotá. El local se ubicaba en el centro (carrera 13A con calle 24) y fue un epicentro bohemio donde convergían literatura, música en vivo, debates políticos, baile y amistad. Hacían lanzamientos de libros y recitales, leían textos y pasaban documentales. Unos años después César y Juan tomaron otros rumbos y Gustavo se quedó a cargo del lugar hasta el final de su vida. Durante años hizo de la fiesta un espacio de promoción de lectura a través de Los Papeles del Goce, una editorial casera en la que replicaba y repartía entre las amistades textos elegidos. Después de separarse, César Pagano montó otros lugares de salsa en la ciudad. Aunque comparten el nombre, el actual Goce Pagano de Las Aguas no tiene relación con El Goce original.",
+        links: [
+          {
+            titulo: "Gustavo Bustamante y el último de los Papeles del Goce",
+            enlace:
+              "https://www.sur.org.co/gustavo-bustamante-y-el-ultimo-de-los-papeles-del-goce/?pdf=8684",
+          },
+          {
+            titulo: "El Goce Pagano está de luto: 7 recuerdos y 5 canciones",
+            enlace:
+              "https://www.semana.com/agenda/articulo/el-goce-pagano-esta-de-luto-7-recuerdos-y-5-canciones/71855/",
+          },
+          {
+            titulo: "El Goce Pagano, donde Gabo fue feliz",
+            enlace:
+              "https://www.las2orillas.co/el-goce-pagano-donde-gabo-fue-feliz/",
+          },
+        ],
         iconSize: [40, 40],
       },
       geometry: {
         type: "Point",
-        coordinates: [-74.0734082748297, 4.61525138458749],
+        coordinates: [-74.07348873360779, 4.6120901831806504],
       },
     },
     {
@@ -1414,7 +1430,7 @@ export const lugares = {
       type: "Feature",
       properties: {
         id: 56,
-        nombre: "tvg (Te Veo Grave)",
+        nombre: "TVG",
         añoInicio: 1991,
         añoFin: 1992,
         direccion: "cll 53 #10-50",
@@ -1426,8 +1442,8 @@ export const lugares = {
         elegido: true,
         icono: 4,
         descripcion:
-          "Funcionó en una bodega que había pertenecido a un grupo teatral, adaptada por Alberto Lezaca como bar con la idea de abrir un escenario a grupos emergentes locales de música experimental electrónica que no tenían un espacio para presentarse, y así mismo traer grupos de la escena underground latinoamericana. Se presentaron allí, entre otros, Hora Local, Malamuerte, Estados Alterados y Nueve.",
-        links: "Poster: https://www.instagram.com/p/CXSRi6elcdl/",
+          "tvg (Te Veo Grave) funcionó en una bodega que había pertenecido a un grupo teatral, adaptada por Alberto Lezaca como bar con la idea de abrir un escenario a grupos emergentes locales de música experimental electrónica que no tenían un espacio para presentarse, y así mismo traer grupos de la escena underground latinoamericana. Se presentaron allí, entre otros, Hora Local, Malamuerte, Estados Alterados y Nueve.",
+        links: [{"titulo": "Póster de un concierto de Estados Alterados", "enlace": "https://www.instagram.com/p/CXSRi6elcdl/"}],
         iconSize: [40, 40],
       },
       geometry: {
@@ -1470,13 +1486,19 @@ export const lugares = {
         localidad: "Santa Fe",
         genero: "Punk, rock, funk, ska",
         causaCierre:
-          "Cumplió el propósito efímero para el cual fue creado y por la naturaleza transitoria de la escena subterránea de la época",
+          "Cumplió el propósito efímero para el cual fue creado y la naturaleza de la escena subterránea de la época era transitoria.",
         elegido: true,
         icono: 1,
         descripcion:
-          "Apareció para dar lugar a un concierto de Mano Negra, famosa agrupación franco-española, que estaba buscando una locación en la ciudad para tocar en Bogotá.\nUno de los socios fundadores del bar decidió arrendar una bodega y adecuar el sitio para el concierto, lo que resultó en un éxito total. El concierto tuvo una particularidad, todo era gratis, desde la entrada hasta la cerveza. Después de este concierto funcionó un tiempo más, pero no alcanzó a durar más de seis meses.",
-        links:
-          "https://razonpublica.com/erase-una-vez-los-noventa-la-movida-rockera-alternativa-bogota/, https://razonpublica.com/erase-una-vez-los-noventa-la-movida-rockera-alternativa-bogota/",
+          "Vena Arteria apareció para dar lugar a un concierto de Mano Negra, famosa agrupación franco-española, que estaba buscando una locación para tocar en Bogotá.\nUno de los socios fundadores del bar decidió arrendar una bodega y adecuar el sitio para el concierto, lo que resultó en un éxito total. El evento tuvo una particularidad, todo era gratis, desde la entrada hasta la cerveza. Después de esto el lugar funcionó un tiempo más, pero no duró más de seis meses.",
+        links: [
+          {
+            titulo:
+              "Érase una vez los noventa: la movida rockera alternativa en Bogotá",
+            enlace:
+              "https://razonpublica.com/erase-una-vez-los-noventa-la-movida-rockera-alternativa-bogota/",
+          },
+        ],
         iconSize: [40, 40],
       },
       geometry: {
