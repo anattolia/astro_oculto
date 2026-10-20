@@ -68,9 +68,23 @@ export const lugares = {
         elegido: true,
         icono: 1,
         descripcion:
-          "Uno de los infaltables de la rumba, la cultura y la bohemia de la Bogotá de los años 80 y 90. Estaba ubicado originalmente en un sótano sobre la avenida Jiménez con carera. 4. La cerveza era barata, no había mesas, ni quien se sentara: se bailaba rock y salsa hasta que sudaban las paredes y el techo. También se usó para ensayar obras de teatro cuando no estaba abierto como bar y se volvió un ícono para la comunidad artística bogotana del momento.",
-        links:
-          "playlist del lugar: https://www.youtube.com/playlist?list=PLhakzgpKngU2cHC4wy_CXxcXNUprs4ZZO \ngrupo nostalgia por antifaz: https://www.facebook.com/groups/9918581110/?locale=es_LA \n\nhttps://www.eltiempo.com/archivo/documento/cms-3459851",
+          "Uno de los infaltables de la rumba, la cultura y la bohemia de la Bogotá de los años 80 y 90. Estaba ubicado originalmente en un sótano sobre la avenida Jiménez con carera 4. La cerveza era barata, no había mesas ni quien se sentara. Se bailaba rock y salsa hasta que sudaban las paredes y el techo. También se usó para ensayar obras de teatro cuando no estaba abierto como bar y se volvió un ícono para la comunidad artística bogotana del momento.",
+        links: [
+          {
+            titulo: "Playlist del lugar",
+            enlace:
+              "https://www.youtube.com/playlist?list=PLhakzgpKngU2cHC4wy_CXxcXNUprs4ZZO",
+          },
+          {
+            titulo: "Grupo de nostalgia por Antifaz",
+            enlace: "https://www.facebook.com/groups/9918581110/?locale=es_LA",
+          },
+          {
+            titulo:
+              "Rumbeadero El Antifaz se trasladó a la calle 60 con carrera novena",
+            enlace: "https://www.eltiempo.com/archivo/documento/cms-3459851",
+          },
+        ],
         iconSize: [40, 40],
       },
       geometry: {
@@ -715,9 +729,26 @@ export const lugares = {
         elegido: true,
         icono: 1,
         descripcion:
-          "Icónico establecimiento de la escena alternativa bogotana, nació a finales de la década de 1990. Además de ser famoso por sus fiestas a mitad de semana, fue el hogar que vio nacer el espacio audiovisual In Vitro Visual en 2003 que, posteriormente, evolucionó para convertirse en lo que hoy se conoce como el festival de cine BOGOSHORTS.",
-        links:
-          "https://distritoch.com/chapinero-musical-2/\n\nhttps://www.eltiempo.com/archivo/documento/mam-2135716 \n\nhttps://www.eltiempo.com/archivo/documento/mam-1629073 \n\nhttps://www.eltiempo.com/archivo/documento/mam-1675167",
+          "Icónico establecimiento de la escena alternativa bogotana que nació a finales de la década de 1990. Además de ser famoso por sus fiestas a mitad de semana, fue el hogar que vio nacer el espacio audiovisual In Vitro Visual en 2003 que, posteriormente, evolucionó para convertirse en lo que hoy se conoce como el festival de cine BOGOSHORTS.",
+        links: [
+          {
+            titulo: "Chapinero Musical",
+            enlace: "https://distritoch.com/chapinero-musical-2/",
+          },
+          {
+            titulo:
+              "'Ahora el juernes empieza desde el martes en Bogotá' - El Tiempo",
+            enlace: "https://www.eltiempo.com/archivo/documento/mam-2135716",
+          },
+          {
+            titulo: "'Las 5 estaciones de la rumba en Chapinero' - El Tiempo",
+            enlace: "https://www.eltiempo.com/archivo/documento/mam-1629073",
+          },
+          {
+            titulo: "'La rumba de los miércoles' - El Tiempo",
+            enlace: "https://www.eltiempo.com/archivo/documento/mam-1675167",
+          },
+        ],
         iconSize: [40, 40],
       },
       geometry: {
@@ -921,7 +952,7 @@ export const lugares = {
         descripcion:
           "Restaurante de comida típica cundiboyacense, fundado por un campesino de Sotaquirá (Boyacá), que trabajó en una hacienda de toros normandos antes de trasladarse a Bogotá. La Normanda fue un lugar de encuentros y celebraciones familiares como, bautizos, matrimonios, aniversarios, etc. Se caracterizó por la presencia de música en vivo de conjuntos, duetos y trios de música popular.",
         links:
-          "https://www.eltiempo.com/bogota/el-restaurante-la-normanda-de-bogota-cerro-sus-puertas-645510, \n\nhttps://www.las2orillas.co/el-lento-y-doloroso-funeral-de-un-antiguo-restaurante-del-centro-bogotano/",
+          [{titulo: "'El restaurante La Normanda de Bogotá cerró sus puertas' - El Tiempo", enlace: "https://www.eltiempo.com/bogota/el-restaurante-la-normanda-de-bogota-cerro-sus-puertas-645510"}, {titulo: "'El lento y doloroso funeral de un antiguo restaurante del centro bogotano' - Las 2 Orillas", enlace: "https://www.las2orillas.co/el-lento-y-doloroso-funeral-de-un-antiguo-restaurante-del-centro-bogotano/"}],
         iconSize: [40, 40],
       },
       geometry: {
@@ -1168,9 +1199,21 @@ export const lugares = {
         elegido: true,
         icono: 5,
         descripcion:
-          'Bar en el centro de Bogotá administrado por Plinio Carvajal, activo justo antes de que empezara la década de los noventa (finales de los ochenta). Era sinónimo de transgresión: tinas con hombres bañados en gelatina y leche condensada, trapecistas sobrevolando al público, una "iglesia" interna con hombres vestidos de santos a los que la gente podía tocar y pedirles milagros. Manuel Antonio Velandia — activista pionero en la prevención del VIH en Colombia — recuerda que ahí, por miedo a que los infectados no llegaran a diciembre, Plinio organizaba la Navidad en junio, con un pesebre de personas reales y una mujer trans como la Virgen María. El bar tenía publicidad de Plinio en la revista Ventana Gay, la primera publicación gay del país. Desapareció con la muerte de Plinio.\n\n¨El movimiento homosexual liderado por Manuel Velandia desarrolló la publicación Ventana Gay en la que había publicidad de Plinio, así como reflexiones, noticias y opiniones sobre la comunidad. Luego, según cuenta Manuel, sería Edison quien abriría las puertas al activismo permitiendo la circulación de revistas y folletos de prevención contra el VIH, pero también en sus tarimas, algo que ya había adelantado Plinio de una manera menos organizada.¨',
-        links:
-          "https://cartelurbano.com/libreydiverso/la-clandestinidad-y-el-activismo-de-la-fiesta-gay-en-la-bogota-de-los-noventa \n\n\n\n\nhttps://uploads.knightlab.com/storymapjs/f5a82cd32b8b5d783dbd5eaecb55ac58/un-recorrido-por-la-fiesta-gay-a-finales-de-siglo-en-bogota/index.html",
+          'Bar en el centro de Bogotá administrado por Plinio Carvajal, activo a finales de la década de 1980. Era sinónimo de transgresión: tinas con hombres bañados en gelatina y leche condensada, trapecistas sobrevolando al público, una "iglesia" interna con hombres vestidos de santos a los que la gente podía tocar y pedirles milagros. Manuel Antonio Velandia, activista pionero en la prevención del VIH en Colombia, recuerda que, por miedo a que los infectados no llegaran a diciembre, Plinio organizaba la Navidad en junio, con un pesebre de personas reales y una mujer trans como la Virgen María. El bar tenía publicidad de Plinio en la revista Ventana Gay, la primera publicación gay del país. Desapareció con la muerte de su dueño.',
+        links: [
+          {
+            titulo:
+              "'La clandestinidad y el activismo de la fiesta gay en la Bogotá de los noventa' - Cartel Urbano",
+            enlace:
+              "https://cartelurbano.com/libreydiverso/la-clandestinidad-y-el-activismo-de-la-fiesta-gay-en-la-bogota-de-los-noventa",
+          },
+          {
+            titulo:
+              "Un recorrido por la fiesta gay a finales de siglo en Bogotá",
+            enlace:
+              "https://uploads.knightlab.com/storymapjs/f5a82cd32b8b5d783dbd5eaecb55ac58/un-recorrido-por-la-fiesta-gay-a-finales-de-siglo-en-bogota/index.html",
+          },
+        ],
         iconSize: [40, 40],
       },
       geometry: {
@@ -1217,9 +1260,15 @@ export const lugares = {
         elegido: true,
         icono: 4,
         descripcion:
-          "Piso 3 abrió en el 2004, con la iniciativa de ser un escenario para conciertos de punk, con un espíritu contestatario a dos años de la primera elección del gobierno Uribe.",
-        links:
-          "https://www.radionica.rocks/cultura/analisis/ecos-de-la-noche-lugares-que-han-forjado-la-cultura-bogotana, https://www.tiktok.com/@unlugaroscuro666/video/7575529743303544085",
+          "Piso 3 abrió en el 2004 con la iniciativa de ser un escenario para conciertos de punk, con un espíritu contestatario, a dos años de la primera elección del gobierno Uribe.",
+        links: [
+          {
+            titulo:
+              "'Ecos de la noche: lugares que han forjado la cultura bogotana' - Radiónica",
+            enlace:
+              "https://www.radionica.rocks/cultura/analisis/ecos-de-la-noche-lugares-que-han-forjado-la-cultura-bogotana",
+          },
+        ],
         iconSize: [40, 40],
       },
       geometry: {
@@ -1393,7 +1442,13 @@ export const lugares = {
         icono: 2,
         descripcion:
           "Fundado por Beatriz Castaño y su hijo, el bajista y compositor Juan Sebastián Monsalve, el establecimiento estuvo activo durante un poco más de cuatro años. A pesar de su corta trayectoria, se convirtió en un pilar fundamental para la escena musical en vivo de la capital colombiana, sirviendo como laboratorio y punto de partida para bandas legendarias como La 33 o Curupira",
-        links: "Guía práctica de navegación por el universo de Jazz al Parque",
+        links: [
+          {
+            titulo:
+              "'El jazz vive en Bogotá'",
+            enlace: "https://issuu.com/patrimoniobogota/docs/jazz_baja",
+          },
+        ],
         iconSize: [40, 40],
       },
       geometry: {
@@ -1443,7 +1498,12 @@ export const lugares = {
         icono: 4,
         descripcion:
           "tvg (Te Veo Grave) funcionó en una bodega que había pertenecido a un grupo teatral, adaptada por Alberto Lezaca como bar con la idea de abrir un escenario a grupos emergentes locales de música experimental electrónica que no tenían un espacio para presentarse, y así mismo traer grupos de la escena underground latinoamericana. Se presentaron allí, entre otros, Hora Local, Malamuerte, Estados Alterados y Nueve.",
-        links: [{"titulo": "Póster de un concierto de Estados Alterados", "enlace": "https://www.instagram.com/p/CXSRi6elcdl/"}],
+        links: [
+          {
+            titulo: "Póster de un concierto de Estados Alterados",
+            enlace: "https://www.instagram.com/p/CXSRi6elcdl/",
+          },
+        ],
         iconSize: [40, 40],
       },
       geometry: {
@@ -1535,7 +1595,7 @@ export const lugares = {
       type: "Feature",
       properties: {
         id: 60,
-        nombre: "Vértigo Campoelias",
+        nombre: "Vértigo Campo Elías",
         añoInicio: 1994,
         añoFin: 1998,
         direccion: "cra 20 # 50-52",
@@ -1560,7 +1620,7 @@ export const lugares = {
       type: "Feature",
       properties: {
         id: 61,
-        nombre: "Vértigo Campoelias",
+        nombre: "Vértigo Campo Elías",
         añoInicio: 1994,
         añoFin: 1998,
         direccion: "ac 53 # 13-63",
