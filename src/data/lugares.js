@@ -516,17 +516,17 @@ export const lugares = {
           "A finales de la década de 1970 Gustavo Bustamante, César Villegas (Pagano) y Juan Gaviria decidieron proponer una rumba salsera y distinta en Bogotá. El local se ubicaba en el centro (carrera 13A con calle 24) y fue un epicentro bohemio donde convergían literatura, música en vivo, debates políticos, baile y amistad. Hacían lanzamientos de libros y recitales, leían textos y pasaban documentales. Unos años después César y Juan tomaron otros rumbos y Gustavo se quedó a cargo del lugar hasta el final de su vida. Durante años hizo de la fiesta un espacio de promoción de lectura a través de Los Papeles del Goce, una editorial casera en la que replicaba y repartía entre las amistades textos elegidos. Después de separarse, César Pagano montó otros lugares de salsa en la ciudad. Aunque comparten el nombre, el actual Goce Pagano de Las Aguas no tiene relación con El Goce original.",
         links: [
           {
-            titulo: "Gustavo Bustamante y el último de los Papeles del Goce",
+            titulo: "'Gustavo Bustamante y el último de los Papeles del Goce' - Hernán Darío Correa",
             enlace:
               "https://www.sur.org.co/gustavo-bustamante-y-el-ultimo-de-los-papeles-del-goce/?pdf=8684",
           },
           {
-            titulo: "El Goce Pagano está de luto: 7 recuerdos y 5 canciones",
+            titulo: "'El Goce Pagano está de luto: 7 recuerdos y 5 canciones' - Semana",
             enlace:
               "https://www.semana.com/agenda/articulo/el-goce-pagano-esta-de-luto-7-recuerdos-y-5-canciones/71855/",
           },
           {
-            titulo: "El Goce Pagano, donde Gabo fue feliz",
+            titulo: "'El Goce Pagano, donde Gabo fue feliz' - Las 2 Orillas",
             enlace:
               "https://www.las2orillas.co/el-goce-pagano-donde-gabo-fue-feliz/",
           },
