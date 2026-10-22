@@ -1,5 +1,5 @@
 ---
-import te_veo_grave from "../assets/te_veo_grave.jpeg";
+import logoOcultoN from "../assets/logoOcultoR.png";
 import portada from "../assets/img/portada.png";
 import background from "../assets/background.svg";
 ---
@@ -8,7 +8,7 @@ import background from "../assets/background.svg";
   <!--  <img id="background" src={portada.src} alt="" fetchpriority="high" />-->
   <main id="hero">
     <section>
-      <h1>OCULTO URBANO</h1>
+      <img id="logo" src={logoOcultoN.src} alt="Logo Oculto" />
     </section>
     <nav id="menu">
       <a href="./ciudad" class="button">Mapa</a>
@@ -46,7 +46,11 @@ import background from "../assets/background.svg";
     justify-content: center;
     background-image: url("../assets/img/portada.png");
     background-size: cover;
+    /* filter: grayscale(1);*/
+    background-size: cover;
+    background-color: #a39883;
     background-position: center;
+    background-blend-mode: exclusion;
     text-align: center;
   }
 
@@ -98,6 +102,14 @@ import background from "../assets/background.svg";
     padding: 6px 8px;
   }
 
+  #logo {
+    width: 60vw;
+    position: absolute;
+    top: 20vh;
+    left: 20vw;
+    filter: invert(1);
+  }
+
   .box {
     padding: 16px;
     background: rgba(255, 255, 255, 1);
@@ -112,13 +124,15 @@ import background from "../assets/background.svg";
     margin-top: 16px;
     width: 50vw;
     justify-content: space-evenly;
+    position: absolute;
+    bottom: 5vh;
 
     a,
     a:visited,
     a:active {
-      color: #474747d0;
+      color: #e6e6e6d0;
       text-decoration: none;
-      background: #efe2da;
+      background: #101f20;
       padding: 2px 8px;
       border-radius: 5px;
       font-family: system-ui;
@@ -126,8 +140,8 @@ import background from "../assets/background.svg";
     }
 
     a:hover {
-      color: #c8c0b6;
-      background: rgba(255, 255, 255);
+      color: #101f20;
+      background: #eed9cfb5;
     }
   }
 
