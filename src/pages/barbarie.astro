@@ -16,8 +16,9 @@ import foto from "../assets/barbarie/barbarie_murdo_macdonald_fb.jpg";
             lugares.features[7]?.properties.añoFin
           }
         </h2>
-        <p>{lugares.features[7]?.properties.direccion}</p>
         <h2>{lugares.features[7]?.properties.genero}</h2>
+        <p class="direccion">{lugares.features[7]?.properties.direccion}</p>
+        <p class="direccion">{lugares.features[7]?.properties.barrio}</p>
         <p>{lugares.features[7]?.properties.descripcion}</p>
 
         Referencias:
@@ -109,6 +110,13 @@ import foto from "../assets/barbarie/barbarie_murdo_macdonald_fb.jpg";
     gap: 6em;
     padding: 1em 7em 1em 5em;
   }
+  
+    .direccion {
+      text-align: center;
+      font-size: 0.8em;
+      line-height: 0.5em;
+      margin: 0.7em;
+    }
 
   .boton {
     color: #474747d0;

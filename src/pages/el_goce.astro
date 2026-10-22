@@ -27,8 +27,9 @@ import rulfo from "../assets/el_goce/2016_Rulfo.pdf";
             lugares.features[18]?.properties.añoFin
           }
         </h2>
-        <p>{lugares.features[18]?.properties.direccion}</p>
         <h2>{lugares.features[18]?.properties.genero}</h2>
+        <p class="direccion">{lugares.features[18]?.properties.direccion}</p>
+        <p class="direccion">{lugares.features[18]?.properties.barrio}</p>
         <p>{lugares.features[18]?.properties.descripcion}</p>
 
         Referencias:
@@ -155,6 +156,13 @@ import rulfo from "../assets/el_goce/2016_Rulfo.pdf";
       justify-content: center;
       gap: 6em;
       padding: 1em 7em 1em 5em;
+    }
+    
+    .direccion {
+      text-align: center;
+      font-size: 0.8em;
+      line-height: 0.5em;
+      margin: 0.7em;
     }
 
     .boton {

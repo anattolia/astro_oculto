@@ -22,8 +22,9 @@ import estadosAlt from "../assets/tvg/tvg_estados_alt.png";
             lugares.features[46]?.properties.añoFin
           }
         </h2>
-         <p>{lugares.features[46]?.properties.direccion}</p>
         <h2>{lugares.features[46]?.properties.genero}</h2>
+        <p class="direccion">{lugares.features[46]?.properties.direccion}</p>
+        <p class="direccion">{lugares.features[46]?.properties.barrio}</p>
         <p>{lugares.features[46]?.properties.descripcion}</p>
 
         Referencias:
@@ -121,6 +122,12 @@ import estadosAlt from "../assets/tvg/tvg_estados_alt.png";
       justify-content: center;
       gap: 6em;
       padding: 1em 7em 1em 5em;
+    }
+    .direccion {
+      text-align: center;
+      font-size: 0.8em;
+      line-height: 0.5em;
+      margin: 0.7em;
     }
 
     .boton {
