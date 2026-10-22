@@ -508,7 +508,7 @@ export const lugares = {
         genero: "Hip hop, indie, cumbia, electrónica",
         causaCierre: "Pandemia",
         elegido: false,
-        icono: 5,
+        icono: 4,
         descripcion:
           "El Chamán era un espacio dedicado a la exploración sonora y al intercambio cultural, construido bajo un principio de negociación justa y condiciones dignas para artistas y DJs. Al mismo tiempo, buscaba ofrecer al público una programación diversa, cuidadosamente curada y en constante diálogo con las distintas expresiones de la escena musical alternativa y emergente.",
         links: "",

@@ -10,7 +10,7 @@ export interface Props {
 // const { zoom, mapstyle, container, accesstoken, interactive, containerstyle = "height: 61.8vh"} = Astro.props
 ---
 
-<a id="inicio" href="../">Inicio</a>
+<a id="inicio" href="../">inicio</a>
 <div class="mapbox-map" id="map"></div>
 
 <script>
@@ -59,9 +59,9 @@ export interface Props {
 
       if (marker.properties.elegido) {
         // Cambiar color de borde a lugares con micrositio
-        el.style.border = "2px solid #7ead7c"; //rgb(255 127 127)";
+        el.style.border = "2px solid #353349"; //rgb(255 127 127)";
       } else {
-        el.style.border = "1px solid black";
+        el.style.border = "1px dashed #353349";
       }
 
       el.style.width = `${width}px`;
@@ -110,11 +110,12 @@ export interface Props {
     z-index: 9999;
     color: #474747d0;
     text-decoration: none;
-    background: #efe2da;
+    background: #e8c742b5;
     padding: 2px 8px;
     border-radius: 5px;
     font-family: system-ui;
-    box-shadow: 2px 2px 2px #242424c9;
+    font-size: 0.9em;
+    box-shadow: 2px 2px 2px #353347;
   }
   #inicio:hover {
     color: #c8c0b6;
@@ -130,7 +131,12 @@ export interface Props {
   }
 
   :global(a, a:visited, a:active) {
-    color: #8590e0;
+    color: #673ab7;
+    text-decoration: underline;
+  }
+
+  :global(a:hover) {
+    color: #efe0dfc9;
     text-decoration: none;
   }
 
@@ -139,7 +145,7 @@ export interface Props {
     border: 1px black solid;
     cursor: pointer;
     padding: 0;
-    background-color: #d2d5edb5; /*#eecfe5b5;*/
+    background-color: #efe0dfc9; /*#eecfe5b5;*/
     border-radius: 50%;
   }
 
@@ -148,15 +154,16 @@ export interface Props {
     border: 1px black solid;
     cursor: pointer;
     padding: 0;
-    background-color: #eed9cfb5;
+    background-color: #8f8aa7db;
     border-radius: 50%;
   }
   :global(.mapboxgl-popup) {
     max-width: 30vw;
     font-family: system-ui;
     text-align: center;
-    background-color: #d2d5edb5;
-    padding: 1em 1.5em;
+    background-color: #35334787; /*#8f8aa7db;*/
+    box-shadow: 2px 2px 2px #353347;
+    padding: 0.8em 1.3em;
     overflow: auto;
   }
 </style>
