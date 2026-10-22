@@ -1,22 +1,23 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import '../styles/global.css';
+import "../styles/global.css";
 
 // Importar lista de lugares
 import { lugares } from "../data/lugares.js";
 
 // Imágenes
-import tvg1 from "../assets/tvg/tvg_jenny_rojas_fb.jpg";
-import boleta1 from "../assets/tvg/boleta_tvg.jpeg";
-import boleta2 from "../assets/tvg/boleta_tvg2.jpeg";
-import tvg2 from "../assets/tvg/te_veo_grave.jpg";
-import estadosAlt from "../assets/tvg/tvg_estados_alt.png";
+import invitro1 from "../assets/invitro/invitro1.jpg";
+import invitro2 from "../assets/invitro/invitro2.jpg";
+import invitro3 from "../assets/invitro/invitro3.jpg";
+import invitro4 from "../assets/invitro/in-vitro-bogotaelectronica.com-por-ale-fenix.jpg";
+import invitro5 from "../assets/invitro/in-vitro-satatic.shock.com.co.jpg";
+import invitro6 from "../assets/invitro/in-vitro-visual-cartelurbano.com-por-william-vega.jpg";
 ---
 
 <Layout>
   <section class="container">
     <div class="info">
-      {/* <img src={tvg1.src} alt="T.V.G. en Bogotá" /> */}
+      <img src={invitro1.src} alt="InVitro bar en Bogotá" />
       <div>
         <h1>InVitro</h1>
         <h2>
@@ -44,12 +45,11 @@ import estadosAlt from "../assets/tvg/tvg_estados_alt.png";
       </div>
     </div>
     <div id="contenedorAV">
-      {
-        /*<img src={boleta1.src} alt="Boleta T.V.G." />
-      <img src={boleta2.src} alt="Boleta T.V.G." />
-      <img src={estadosAlt.src} alt="Estados Alterados en T.V.G." />
-      <img src={tvg2.src} alt="T.V.G. en Bogotá" />*/
-      }
+      <img src={invitro3.src} alt="InVitro bar en Bogotá" />
+      <img src={invitro4.src} alt="InVitro bar en Bogotá" />
+      <img src={invitro5.src} alt="InVitro bar en Bogotá" />
+      <img src={invitro6.src} alt="InVitro bar en Bogotá" />
+      <img src={invitro2.src} alt="InVitro bar en Bogotá" />
     </div>
     <a class="boton" href="../ciudad">volver al mapa</a>
   </section>
@@ -100,7 +100,7 @@ import estadosAlt from "../assets/tvg/tvg_estados_alt.png";
   }
 
   img {
-    height: 85vh;
+    width: 35vw;
   }
 
   a,
@@ -133,20 +133,6 @@ import estadosAlt from "../assets/tvg/tvg_estados_alt.png";
     margin: 0.7em;
   }
 
- /*.boton {
-    color: #474747d0;
-    text-decoration: none;
-    background: #e8c742b5;
-    padding: 6px 6px;
-    border-radius: 5px;
-    font-family: system-ui;
-    font-size: 0.6em;
-    position: fixed;
-    bottom: 3vh;
-    right: 2vw;
-    box-shadow: 2px 2px 2px #242424c9;
-  }
-*/
   #contenedorAV {
     display: flex;
     justify-content: center;
@@ -158,7 +144,7 @@ import estadosAlt from "../assets/tvg/tvg_estados_alt.png";
     gap: 2em;
 
     img {
-      width: 20%;
+      width: 30%;
       height: auto;
     }
 

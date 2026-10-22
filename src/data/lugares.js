@@ -1308,11 +1308,11 @@ export const lugares = {
         añoInicio: 2004,
         añoFin: 2009,
         direccion: "ac. 32 # 13-45",
-        barrio: "Samper",
+        barrio: "San Martín",
         localidad: "Santa Fe",
         genero: "Electrónica, punk",
         causaCierre: "¿?",
-        elegido: true,
+        elegido: false,
         icono: 4,
         descripcion:
           "Piso 3 abrió en el 2004 con la iniciativa de ser un escenario para conciertos de punk, con un espíritu contestatario, a dos años de la primera elección del gobierno Uribe.",

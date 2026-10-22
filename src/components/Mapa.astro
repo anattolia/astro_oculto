@@ -10,7 +10,7 @@ export interface Props {
 // const { zoom, mapstyle, container, accesstoken, interactive, containerstyle = "height: 61.8vh"} = Astro.props
 ---
 
-<a id="inicio" href="../">inicio</a>
+<a id="inicio" href="../">Inicio</a>
 <div class="mapbox-map" id="map"></div>
 
 <script>
@@ -108,18 +108,18 @@ export interface Props {
     top: 10px;
     left: 20px;
     z-index: 9999;
-    color: #474747d0;
+    color: #efe0dfde;
     text-decoration: none;
-    background: #e8c742b5;
+    background: #353347cc;
     padding: 2px 8px;
     border-radius: 5px;
     font-family: system-ui;
     font-size: 0.9em;
-    box-shadow: 2px 2px 2px #353347;
+    box-shadow: 2px 2px 2px #020202c9;
   }
   #inicio:hover {
-    color: #c8c0b6;
-    background: rgba(255, 255, 255);
+    color: #343246c7;
+    background: #efe0df;
   }
   #map {
     width: 98%;
@@ -131,12 +131,12 @@ export interface Props {
   }
 
   :global(a, a:visited, a:active) {
-    color: #9225ba;
+    color: #8367c7;
     text-decoration: underline;
   }
 
   :global(a:hover) {
-    color: #efe0dfc9;
+    color: #a72508cb;
     text-decoration: none;
   }
 
@@ -145,7 +145,7 @@ export interface Props {
     border: 1px black solid;
     cursor: pointer;
     padding: 0;
-    background-color: #eecfe5b5;
+    background-color: #f7e03bab;
     border-radius: 50%;
   }
 
@@ -154,14 +154,14 @@ export interface Props {
     border: 1px black solid;
     cursor: pointer;
     padding: 0;
-    background-color: #8f8aa7db;
+    background-color: #a72508cb;
     border-radius: 50%;
   }
   :global(.mapboxgl-popup) {
     max-width: 30vw;
     font-family: system-ui;
     text-align: center;
-    background-color: #e8d486a1;
+    background-color: #343246a8;
     box-shadow: 2px 2px 2px #353347;
     padding: 0.8em 1.3em;
     overflow: auto;

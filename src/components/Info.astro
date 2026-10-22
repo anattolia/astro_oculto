@@ -1,0 +1,244 @@
+---
+import logoOcultoN from "../assets/logoOcultoR.png";
+import portada from "../assets/img/portada.png";
+import background from "../assets/background.svg";
+---
+
+<div id="container">
+  <!--  <img id="background" src={portada.src} alt="" fetchpriority="high" />-->
+  <main id="hero">
+    <img id="logo" src={logoOcultoN.src} alt="Logo Oculto" />
+    <p id="convocatoria">
+      Ganador Convocatoria Pública - Secretaría de Cultura, Recreación y Deporte
+    </p>
+
+    <section>
+      <p>
+        Oculto Urbano es un mapa, una investigación colectiva en proceso, un
+        ejercicio de memoria urbana con un poco de nostalgia y mucha curiosidad
+        por los lugares de la ciudad, ya desaparecidos, que han contribuido en
+        las últimas décadas a dar forma y sentido a la reunión en torno a la
+        música, la fiesta y la cultura.
+      </p>
+    </section>
+
+    <section id="descripcion">
+      <p>
+        Bogotá ha transformado radicalmente su tejido cultural urbano en las
+        últimas tres décadas. La gentrificación, la renovación del suelo y las
+        nuevas regulaciones del espacio público han provocado el cierre masivo
+        de espacios contraculturales que fueron nodos de construcción de
+        identidad colectiva, diversidad y disidencia simbólica: bares, cafés,
+        tiendas de música especializada, salas de conciertos que hospedaron
+        escenas de rock, salsa, bolero, hip-hop y cultura popular urbana. El
+        Goce Pagano (carrera 13A con calle 23), la tienda de salsa de la calle
+        19, La Normanda (calle 22 con carrera 9a) y el Café Saint Moritz (calle
+        16 con carrera 8) son apenas algunos de los muchos lugares que
+        desaparecieron sin dejar huella visible en el andén que ocuparon.
+      </p>
+
+      <p>
+        Esta desaparición no es solo arquitectónica, es también la desaparición
+        de formas de estar juntos, de prácticas de convivencia, de memorias
+        compartidas que definieron modos de habitar la ciudad. Como señala
+        Manuel Delgado, el espacio urbano es ante todo un espacio practicado, un
+        escenario permanente de negociaciones entre cuerpos, afectos y poderes;
+        cuando esos lugares desaparecen, no solo se pierde un local: se borra un
+        modo de practicar la ciudad, una forma de ser ciudadano/a. La
+        problemática central es la erosión de la memoria cultural viva de Bogotá
+        y la pérdida de referentes identitarios para comunidades que
+        construyeron su subjetividad colectiva en esos espacios.
+      </p>
+
+      <p>
+        Desde la teoría del espacio producido (Lefebvre), el espacio urbano no
+        es neutral, sino el resultado de prácticas sociales, disputas y
+        acuerdos. El andén, entendido como regulador de copresencia (Simmel) y
+        escena urbana cotidiana (Benjamin), es el espacio mínimo donde la
+        ciudadanía se reconoce como tal. Frente al no-lugar (Augé) que
+        caracteriza los nuevos desarrollos urbanos, el andén de la ciudad
+        histórica es un lugar cargado de memoria y de cuerpos. Como documenta el
+        artículo Fiesta y Espacio Público (Indymedia Barcelona, 2001), la fiesta
+        en el espacio público es ocupación política, acto de apropiación
+        colectiva que desafía los dispositivos de control blando (Foucault) que
+        regulan los usos del territorio. Los espacios contraculturales fueron,
+        en ese sentido, fiesta permanente: lugares donde la ciudad se negociaba
+        desde abajo.
+      </p>
+    </section>
+
+    <section>
+      <p>
+        Agradecemos a todas las personas que, generosamente, han contribuido a
+        esta investigación con información, tiempo, imágenes, recuerdos y
+        anécdotas. También a todos aquellos que comparten sus recuerdos en
+        Internet, ese extraño archivo desordenado y colectivo.
+      </p>
+    </section>
+    <nav id="menu">
+      <a href="./" class="button">Inicio</a>
+    </nav>
+  </main>
+</div>
+
+<script></script>
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Play:wght@400;700&display=swap");
+  #background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: blur(1px);
+  }
+
+  #container {
+    font-family:
+      Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans", Arial,
+      sans-serif;
+    height: 100%;
+    height: fit-content;
+    padding: 5em;
+    background-color: #353347;
+  }
+
+  main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* background-image: url("../assets/img/portada.png");*/
+    background-size: cover;
+    /* filter: grayscale(1);*/
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+  }
+
+  #hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #descripcion {
+    border-top: #eecfe5b5 1px dashed;
+    padding-top: 1em;
+  }
+
+  #convocatoria {
+    font-size: 0.8em;
+  }
+
+  h1 {
+    font-size: 5em;
+    margin-top: 20vh;
+    padding: 0.1em 0.5em;
+    font-family: Play, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    background: #eecfe5b5;
+    color: #000000;
+    box-shadow: 6px 6px 7px #242424c9;
+    border-radius: 5px;
+  }
+
+  h1:hover {
+  }
+
+  h2 {
+    margin: 0 0 1em;
+    font-weight: normal;
+    color: #111827;
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0em;
+    margin: 0;
+    padding: 1em 6em;
+    color: #e2d4d4;
+  }
+
+  code {
+    display: inline-block;
+    background:
+      linear-gradient(66.77deg, #f3cddd 0%, #f5cee7 100%) padding-box,
+      linear-gradient(155deg, #d83333 0%, #f041ff 18%, #f5cee7 45%) border-box;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 6px 8px;
+  }
+
+  #logo {
+    width: 20vw;
+    margin-bottom: 2em;
+  }
+
+  .box {
+    padding: 16px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 16px;
+    border: 1px solid white;
+  }
+
+  #menu {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 16px;
+    width: 50vw;
+    justify-content: space-evenly;
+    bottom: 5vh;
+
+    a,
+    a:visited,
+    a:active {
+      color: #e6e6e6d0;
+      text-decoration: none;
+      /* background: #101f20; */
+      padding: 2px 8px;
+      border-radius: 5px;
+      font-family: system-ui;
+      box-shadow: 2px 2px 2px #020202c9;
+    }
+
+    a:hover {
+      color: #353349;
+      background: #eed9cfb5;
+    }
+  }
+
+  @media screen and (max-height: 368px) {
+    #news {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    #container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #hero {
+      display: block;
+      padding-top: 10%;
+    }
+
+    #menu {
+      width: 100vw;
+    }
+
+    h1 {
+      margin-top: 35vh;
+      padding: inherit;
+    }
+  }
+</style>

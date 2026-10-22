@@ -1,7 +1,18 @@
+/*Estilo micrositios lugares*/
+.info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+  gap: 5em;
+  padding: 1em 6em 1em 5em;
+}
+
 .boton {
-  color: #474747d0;
+  color: #343246;
   text-decoration: none;
-  background: #e8c742b5;
+  background: #f7e03bab;
   padding: 6px 6px;
   border-radius: 5px;
   font-family: system-ui;
