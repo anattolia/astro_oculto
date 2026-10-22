@@ -1633,16 +1633,20 @@ export const lugares = {
         añoInicio: 1994,
         añoFin: 1998,
         direccion: "cra 13A # 34-10",
-        barrio: "Sagrado corazón",
-        localidad: "Santa Fe",
+        barrio: "Teusaquillo",
+        localidad: "Teusaquillo",
         genero: "Post punk, grunge, rock alternativo",
         causaCierre: "Cambios en la vida de su fundador.",
         elegido: true,
         icono: 1,
         descripcion:
           "Legendario bar de rock y música alternativa ubicado en una casa esquinera con muchos cuartos y luces negras y de neón. Fundado por Carlos Ramírez (El Mono) tras la masacre de Pozzetto (de ahí su particular nombre, en referencia al asesino Campo Elías Delgado), Vértigo nació inspirado en Barbarie, con una colección de 12.000 vinilos. Fue clave para la escena musical local, sirviendo de escenario para bandas emergentes como La Derecha, Estados Alterados, La Pestilencia, Juanita Dientes Verdes y 1280 Almas.",
-        links:
-          "https://bibliotecacinemateca.idartes.gov.co/cgi-bin/koha/opac-detail.pl?biblionumber=88811\n\nhttps://www.instagram.com/p/ClCVIT2PMmZ/",
+        links: [
+          {
+            titulo: "Rock bogotano - Instagram",
+            enlace: "https://www.instagram.com/p/ClCVIT2PMmZ/",
+          },
+        ],
         iconSize: [40, 40],
       },
       geometry: {

@@ -2,13 +2,13 @@
 import Layout from "../layouts/Layout.astro";
 // Importar lista de lugares
 import { lugares } from "../data/lugares.js";
-// import foto from "../assets/barbarie/barbarie_murdo_macdonald_fb.jpg";
+import venaArteria1 from "../assets/vena_arteria/vena_arteria1.jpeg";
 ---
 
 <Layout>
   <section class="container">
     <div class="info">
-      {/* <img src={foto.src} alt="Puerta de Barbarie" /> */}
+      <img src={venaArteria1.src} alt="Puerta de Barbarie" />
       <div>
         <h1>Vena Arteria</h1>
         <h2>
@@ -35,6 +35,12 @@ import { lugares } from "../data/lugares.js";
         </ul>
       </div>
     </div>
+    {
+      /* <div id="contenedorAV">
+      <img src={vertigo2.src} alt="Flyers Vértigo Campo Elías" />
+    </div>
+  */
+    }
     <a class="boton" href="../ciudad">volver al mapa</a>
   </section>
 </Layout>
@@ -84,7 +90,7 @@ import { lugares } from "../data/lugares.js";
   }
 
   img {
-    height: 85vh;
+    height: 80vh;
   }
 
   a,
