@@ -1,5 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import "../styles/global.css";
+
 // Importar lista de lugares
 import { lugares } from "../data/lugares.js";
 
@@ -142,20 +144,6 @@ import estadosAlt from "../assets/tvg/tvg_estados_alt.png";
     margin: 0.7em;
   }
 
-  .boton {
-    color: #474747d0;
-    text-decoration: none;
-    background: #e8c742b5;
-    padding: 6px 6px;
-    border-radius: 5px;
-    font-family: system-ui;
-    font-size: 0.6em;
-    position: fixed;
-    bottom: 3vh;
-    right: 2vw;
-    box-shadow: 2px 2px 2px #242424c9;
-  }
-
   #contenedorAV {
     display: flex;
     justify-content: center;
@@ -215,7 +203,10 @@ import estadosAlt from "../assets/tvg/tvg_estados_alt.png";
       gap: 2em;
       padding: 0em;
     }
-
+    .boton {
+      bottom: 10px;
+      right: 15px;
+    }
     #contenedorAV {
       img {
         width: 40%;

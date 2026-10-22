@@ -1,0 +1,13 @@
+.boton {
+  color: #474747d0;
+  text-decoration: none;
+  background: #e8c742b5;
+  padding: 6px 6px;
+  border-radius: 5px;
+  font-family: system-ui;
+  font-size: 0.8em;
+  position: fixed;
+  bottom: 3vh;
+  right: 2vw;
+  box-shadow: 2px 2px 2px #242424c9;
+}

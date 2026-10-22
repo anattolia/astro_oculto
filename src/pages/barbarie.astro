@@ -1,5 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import "../styles/global.css";
+
 // Importar lista de lugares
 import { lugares } from "../data/lugares.js";
 import foto from "../assets/barbarie/barbarie_murdo_macdonald_fb.jpg";
@@ -110,26 +112,12 @@ import foto from "../assets/barbarie/barbarie_murdo_macdonald_fb.jpg";
     gap: 6em;
     padding: 1em 7em 1em 5em;
   }
-  
-    .direccion {
-      text-align: center;
-      font-size: 0.8em;
-      line-height: 0.5em;
-      margin: 0.7em;
-    }
 
-  .boton {
-    color: #474747d0;
-    text-decoration: none;
-    background: #e8c742b5;
-    padding: 6px 6px;
-    border-radius: 5px;
-    font-family: system-ui;
-    font-size: 0.6em;
-    position: fixed;
-    bottom: 3vh;
-    right: 2vw;
-    box-shadow: 2px 2px 2px #242424c9;
+  .direccion {
+    text-align: center;
+    font-size: 0.8em;
+    line-height: 0.5em;
+    margin: 0.7em;
   }
 
   @media screen and (max-width: 450px) {
@@ -151,6 +139,10 @@ import foto from "../assets/barbarie/barbarie_murdo_macdonald_fb.jpg";
       justify-content: center;
       gap: 2em;
       padding: 0em;
+    }
+    .boton {
+      bottom: 10px;
+      right: 15px;
     }
   }
 
