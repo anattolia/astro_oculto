@@ -89,7 +89,7 @@ export const lugares = {
       },
       geometry: {
         type: "Point",
-        coordinates: [-74.07073697582878, 4.600631469278485]
+        coordinates: [-74.07073697582878, 4.600631469278485],
       },
     },
     {
@@ -264,8 +264,30 @@ export const lugares = {
         icono: 1,
         descripcion:
           "Después del cierre de Barbarie, Andrea y Héctor abrieron Barbie en Cedritos, el segundo de la serie de bares alternativos que seguirían abriendo y cerrando en el circuito independiente de la ciudad. En esa época terminó Delia y los Aminoácidos y nació Aterciopelados. Los gestores eran los mismos decoradores, músicos y productores. Era un bar con concepto que ensamblaba objetos, sabores, sonidos y colores con el escenario abierto a la experimentación y las fiestas temáticas.",
-        links:
-          [{titulo: "'Barbie y Barbarie: El aporte de Aterciopelados a la vida nocturna capitalina en los 90' - Vice", enlace: "https://www.vice.com/es/article/barbie-y-barbarie-el-aporte-de-aterciopelados-a-la-vida-nocturna-capitalina-en-los-90/"}, {titulo: "'Érase una vez los noventa: la movida rockera alternativa en Bogotá' - Razón Pública", enlace: "https://razonpublica.com/erase-una-vez-los-noventa-la-movida-rockera-alternativa-bogota/"}, {titulo: "Entrevista con Héctor Buitrago y Andrea Echeverri - Cartel Urbano", enlace: "https://cartelurbano.com/musica/hector-buitrago-escudero-andrea-echeverri#"}, {titulo: "Video de @leyendasdecalle - Instagram", enlace: "https://www.instagram.com/reels/DKF5najyXyb/"}],
+        links: [
+          {
+            titulo:
+              "'Barbie y Barbarie: El aporte de Aterciopelados a la vida nocturna capitalina en los 90' - Vice",
+            enlace:
+              "https://www.vice.com/es/article/barbie-y-barbarie-el-aporte-de-aterciopelados-a-la-vida-nocturna-capitalina-en-los-90/",
+          },
+          {
+            titulo:
+              "'Érase una vez los noventa: la movida rockera alternativa en Bogotá' - Razón Pública",
+            enlace:
+              "https://razonpublica.com/erase-una-vez-los-noventa-la-movida-rockera-alternativa-bogota/",
+          },
+          {
+            titulo:
+              "Entrevista con Héctor Buitrago y Andrea Echeverri - Cartel Urbano",
+            enlace:
+              "https://cartelurbano.com/musica/hector-buitrago-escudero-andrea-echeverri#",
+          },
+          {
+            titulo: "Video de @leyendasdecalle - Instagram",
+            enlace: "https://www.instagram.com/reels/DKF5najyXyb/",
+          },
+        ],
         iconSize: [40, 40],
       },
       geometry: {
@@ -516,12 +538,14 @@ export const lugares = {
           "A finales de la década de 1970 Gustavo Bustamante, César Villegas (Pagano) y Juan Gaviria decidieron proponer una rumba salsera y distinta en Bogotá. El local se ubicaba en el centro (carrera 13A con calle 24) y fue un epicentro bohemio donde convergían literatura, música en vivo, debates políticos, baile y amistad. Hacían lanzamientos de libros y recitales, leían textos y pasaban documentales. Unos años después César y Juan tomaron otros rumbos y Gustavo se quedó a cargo del lugar hasta el final de su vida. Durante años hizo de la fiesta un espacio de promoción de lectura a través de Los Papeles del Goce, una editorial casera en la que replicaba y repartía entre las amistades textos elegidos. Después de separarse, César Pagano montó otros lugares de salsa en la ciudad. Aunque comparten el nombre, el actual Goce Pagano de Las Aguas no tiene relación con El Goce original.",
         links: [
           {
-            titulo: "'Gustavo Bustamante y el último de los Papeles del Goce' - Hernán Darío Correa",
+            titulo:
+              "'Gustavo Bustamante y el último de los Papeles del Goce' - Hernán Darío Correa",
             enlace:
               "https://www.sur.org.co/gustavo-bustamante-y-el-ultimo-de-los-papeles-del-goce/?pdf=8684",
           },
           {
-            titulo: "'El Goce Pagano está de luto: 7 recuerdos y 5 canciones' - Semana",
+            titulo:
+              "'El Goce Pagano está de luto: 7 recuerdos y 5 canciones' - Semana",
             enlace:
               "https://www.semana.com/agenda/articulo/el-goce-pagano-esta-de-luto-7-recuerdos-y-5-canciones/71855/",
           },
@@ -750,7 +774,8 @@ export const lugares = {
           },
           {
             titulo: "Nostalgia bogotana - Instagram",
-            enlace: "https://www.instagram.com/p/CJyd9LJJ6jV/",}
+            enlace: "https://www.instagram.com/p/CJyd9LJJ6jV/",
+          },
         ],
         iconSize: [40, 40],
       },
@@ -954,8 +979,20 @@ export const lugares = {
         icono: 2,
         descripcion:
           "Restaurante de comida típica cundiboyacense, fundado por un campesino de Sotaquirá (Boyacá), que trabajó en una hacienda de toros normandos antes de trasladarse a Bogotá. La Normanda fue un lugar de encuentros y celebraciones familiares como, bautizos, matrimonios, aniversarios, etc. Se caracterizó por la presencia de música en vivo de conjuntos, duetos y trios de música popular.",
-        links:
-          [{titulo: "'El restaurante La Normanda de Bogotá cerró sus puertas' - El Tiempo", enlace: "https://www.eltiempo.com/bogota/el-restaurante-la-normanda-de-bogota-cerro-sus-puertas-645510"}, {titulo: "'El lento y doloroso funeral de un antiguo restaurante del centro bogotano' - Las 2 Orillas", enlace: "https://www.las2orillas.co/el-lento-y-doloroso-funeral-de-un-antiguo-restaurante-del-centro-bogotano/"}],
+        links: [
+          {
+            titulo:
+              "'El restaurante La Normanda de Bogotá cerró sus puertas' - El Tiempo",
+            enlace:
+              "https://www.eltiempo.com/bogota/el-restaurante-la-normanda-de-bogota-cerro-sus-puertas-645510",
+          },
+          {
+            titulo:
+              "'El lento y doloroso funeral de un antiguo restaurante del centro bogotano' - Las 2 Orillas",
+            enlace:
+              "https://www.las2orillas.co/el-lento-y-doloroso-funeral-de-un-antiguo-restaurante-del-centro-bogotano/",
+          },
+        ],
         iconSize: [40, 40],
       },
       geometry: {
@@ -1447,8 +1484,7 @@ export const lugares = {
           "Fundado por Beatriz Castaño y su hijo, el bajista y compositor Juan Sebastián Monsalve, el establecimiento estuvo activo durante un poco más de cuatro años. A pesar de su corta trayectoria, se convirtió en un pilar fundamental para la escena musical en vivo de la capital colombiana, sirviendo como laboratorio y punto de partida para bandas legendarias como La 33 o Curupira",
         links: [
           {
-            titulo:
-              "'El jazz vive en Bogotá'",
+            titulo: "'El jazz vive en Bogotá'",
             enlace: "https://issuu.com/patrimoniobogota/docs/jazz_baja",
           },
         ],
@@ -1466,7 +1502,7 @@ export const lugares = {
         nombre: "Transilvania",
         añoInicio: 1993,
         añoFin: 1995,
-        direccion: "cra 7 # 59 -18",
+        direccion: "cra 7 # 59-18",
         barrio: "Chapinero central",
         localidad: "Chapinero",
         genero: "Rock",
@@ -1475,13 +1511,12 @@ export const lugares = {
         icono: 1,
         descripcion:
           "Con una atmósfera lúgubre, gótica e industrial este espacio era amplio y estaba acondicionado para conciertos y fiestas capaces de albergar un aforo importante, a diferencia de otros espacios dedicados a la escena independiente. Se dice que un lazo grueso colgaba del techo y era usado por los asistentes para colgarse y balancearse. Cuentan también que allí se organizó el primer concierto de Caifanes en Bogotá, con Aterciopelados como teloneros.",
-        links:
-          [{}],
+        links: [{}],
         iconSize: [40, 40],
       },
       geometry: {
         type: "Point",
-        coordinates: [-74.062003308646, 4.64548012232655],
+        coordinates: [-74.06168223267076, 4.644461750121313],
       },
     },
     {
