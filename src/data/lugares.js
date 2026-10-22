@@ -791,23 +791,38 @@ export const lugares = {
         nombre: "Kaliman",
         añoInicio: 1994,
         añoFin: "¿?",
-        direccion: "cll 82 # 14",
-        barrio: "Lago Gaitán",
+        direccion: "cll 82 # 13-39",
+        barrio: "Zona Rosa",
         localidad: "Chapinero",
         genero: "Ska, hip-hop, punk, rock mexicano y argentino, electrónica",
         causaCierre:
           "especulación: En enero de 1995, el alcalde de Bogotá Antanas Mockus decidió implementar una ley que obligaba a los establecimientos de esparcimiento a cerrar a la 1 de la madrugada. La ‘Ley Zanahoria’ buscó bajar las tasas de criminalidad y homicidios en la ciudad.",
-        elegido: false,
+        elegido: true,
         icono: 1,
         descripcion:
           "Fue una casa de familia que se adaptó a las necesidades del bar, por eso la peculiar tarima con un árbol gigante en la mitad. Héctor Buitrago y sus socios decidieron no tumbar el árbol, sino adaptar el espacio para que pudiera convivir junto con la música.\n\nEl bar exploró varios género músicales: se ponía ska, hip-hop, punk, rock mexicano y argentino, y al final de la noche música electrónica. De una u otra manera, ahí empezó a nacer la escena electrónica en Bogotá.",
-        links:
-          "https://razonpublica.com/erase-una-vez-los-noventa-la-movida-rockera-alternativa-bogota/\n\nhttps://www.facebook.com/LaNewOlderNonStop/posts/la-new-older-un-lugar-llamado-kaliman-hace-7-a%C3%B1os-decidimos-hacer-una-de-las-fie/1218705653487585/ \n\nhttps://www.instagram.com/rock.bogotano/p/C8j1Odlutjx/",
+        links: [
+          {
+            titulo:
+              "Érase una vez los noventa: la movida rockera alternativa en Bogotá",
+            enlace:
+              "https://razonpublica.com/erase-una-vez-los-noventa-la-movida-rockera-alternativa-bogota/",
+          },
+          {
+            titulo: "Un lugar llamado Kaliman - La New Order",
+            enlace:
+              "https://www.facebook.com/LaNewOlderNonStop/posts/la-new-older-un-lugar-llamado-kaliman-hace-7-a%C3%B1os-decidimos-hacer-una-de-las-fie/1218705653487585/",
+          },
+          {
+            titulo: "Rock bogotano - Instagram",
+            enlace: "https://www.instagram.com/rock.bogotano/p/C8j1Odlutjx/",
+          },
+        ],
         iconSize: [40, 40],
       },
       geometry: {
         type: "Point",
-        coordinates: [-74.055672969328, 4.6673591269022],
+        coordinates: [-74.0552871335007, 4.667157960542444],
       },
     },
     {
@@ -1511,7 +1526,13 @@ export const lugares = {
         icono: 1,
         descripcion:
           "Con una atmósfera lúgubre, gótica e industrial este espacio era amplio y estaba acondicionado para conciertos y fiestas capaces de albergar un aforo importante, a diferencia de otros espacios dedicados a la escena independiente. Se dice que un lazo grueso colgaba del techo y era usado por los asistentes para colgarse y balancearse. Cuentan también que allí se organizó el primer concierto de Caifanes en Bogotá, con Aterciopelados como teloneros.",
-        links: [{}],
+        links: [
+          {
+            titulo: "'TRANSILVANIA BAR, La Ley del Ruido'",
+            enlace:
+              "https://www.facebook.com/LaNewOlderNonStop/posts/transilvania-bar-la-ley-del-ruido-bogot%C3%A1-a%C3%B1o-1993-la-movida-alternativa-local-vi/1285454460146037/",
+          },
+        ],
         iconSize: [40, 40],
       },
       geometry: {
