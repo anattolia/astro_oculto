@@ -8,25 +8,6 @@ import logoBogMiCiudad from "../assets/logoBogMiCiudad.png";
 <div id="container">
   <!--  <img id="background" src={portada.src} alt="" fetchpriority="high" />-->
   <main id="hero">
-    <section id="logos">
-      <div>
-        <img
-          id="logoSecretaria"
-          src={logoSecretaria.src}
-          alt="Logo Secretaría de Cultura, Recreación y Deporte"
-        />
-        <img
-          id="logoBogota"
-          src={logoBogota.src}
-          alt="Logo Alcaldía de Bogotá"
-        />
-      </div>
-      <img
-        id="logoBogMiCiudad"
-        src={logoBogMiCiudad.src}
-        alt="Logo Bogotá Mi Ciudad"
-      />
-    </section>
     <img id="logo" src={logoOcultoN.src} alt="Logo Oculto" />
     <p id="convocatoria">
       Ganador Convocatoria Pública - Secretaría de Cultura, Recreación y Deporte
@@ -95,10 +76,32 @@ import logoBogMiCiudad from "../assets/logoBogMiCiudad.png";
         Internet, ese extraño archivo desordenado y colectivo.
       </p>
     </section>
-    <nav id="menu">
+  
+  </main>
+   <p id="apoyo">Con el apoyo de:</p>
+   <section id="logos">
+      <div>
+        <img
+          id="logoSecretaria"
+          src={logoSecretaria.src}
+          alt="Logo Secretaría de Cultura, Recreación y Deporte"
+        />
+        <img
+          id="logoBogota"
+          src={logoBogota.src}
+          alt="Logo Alcaldía de Bogotá"
+        />
+      </div>
+      <img
+        id="logoBogMiCiudad"
+        src={logoBogMiCiudad.src}
+        alt="Logo Bogotá Mi Ciudad"
+      />
+    </section>
+
+      <nav id="menu">
       <a href="./" class="button">Inicio</a>
     </nav>
-  </main>
 </div>
 
 <script></script>
@@ -145,19 +148,27 @@ import logoBogMiCiudad from "../assets/logoBogMiCiudad.png";
     justify-content: center;
   }
 
+    #apoyo {
+      text-align: center;
+      font-size: 0.8em;
+      margin-bottom: 1em;
+    }
+
   #logos {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 50vw;
     border-bottom: #eecfe5b5 1px solid;
-    width: 85vw;
-    margin-bottom: 3em;
+    width: 75vw;
+    margin: 0 auto;
     padding-bottom: 1em;
 
     #logoSecretaria {
       border-right: #eecfe5b5 1px solid;
     }
+
+  
 
     img {
       max-height: 33px;
@@ -229,12 +240,10 @@ import logoBogMiCiudad from "../assets/logoBogMiCiudad.png";
 
   #menu {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 16px;
-    margin-top: 16px;
-    width: 50vw;
-    justify-content: space-evenly;
-    bottom: 5vh;
+    margin: 16px;
+    width: 80vw;
 
     a,
     a:visited,
@@ -262,6 +271,7 @@ import logoBogMiCiudad from "../assets/logoBogMiCiudad.png";
 
   @media screen and (max-width: 768px) {
     #container {
+      padding: 0;
       display: flex;
       flex-direction: column;
     }
@@ -269,10 +279,6 @@ import logoBogMiCiudad from "../assets/logoBogMiCiudad.png";
     #hero {
       display: block;
       padding-top: 10%;
-    }
-
-    #menu {
-      width: 100vw;
     }
 
     h1 {
