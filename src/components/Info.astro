@@ -1,12 +1,32 @@
 ---
 import logoOcultoN from "../assets/logoOcultoR.png";
-import portada from "../assets/img/portada.png";
-import background from "../assets/background.svg";
+import logoSecretaria from "../assets/logoSecretaria.png";
+import logoBogota from "../assets/logoBogota.png";
+import logoBogMiCiudad from "../assets/logoBogMiCiudad.png";
 ---
 
 <div id="container">
   <!--  <img id="background" src={portada.src} alt="" fetchpriority="high" />-->
   <main id="hero">
+    <section id="logos">
+      <div>
+        <img
+          id="logoSecretaria"
+          src={logoSecretaria.src}
+          alt="Logo Secretaría de Cultura, Recreación y Deporte"
+        />
+        <img
+          id="logoBogota"
+          src={logoBogota.src}
+          alt="Logo Alcaldía de Bogotá"
+        />
+      </div>
+      <img
+        id="logoBogMiCiudad"
+        src={logoBogMiCiudad.src}
+        alt="Logo Bogotá Mi Ciudad"
+      />
+    </section>
     <img id="logo" src={logoOcultoN.src} alt="Logo Oculto" />
     <p id="convocatoria">
       Ganador Convocatoria Pública - Secretaría de Cultura, Recreación y Deporte
@@ -123,6 +143,21 @@ import background from "../assets/background.svg";
     align-items: center;
     flex-direction: column;
     justify-content: center;
+  }
+
+  #logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50vw;
+    border-bottom: #eecfe5b5 1px solid;
+    width: 85vw;
+    margin-bottom: 3em;
+    padding-bottom: 1em;
+
+    img {
+      max-height: 33px;
+    }
   }
 
   #descripcion {
